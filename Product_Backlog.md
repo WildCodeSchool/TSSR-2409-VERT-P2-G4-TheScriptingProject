@@ -7,6 +7,19 @@
 - Semaine 04 `SM=        && PO=       `
 
 ### II. Semaine 01 - Mise en place des labos de chaque membres
+
+| Distribution | Windows Server 2022 | Debian 12 | Windows 10 | Ubuntu 22.04 |  
+|:---:|:---:|:---:|:---:|:---:|
+| Nom | **SRVWIN01** | **SRVLX01** | CLIWIN01 | CLILIN01 |
+| Compte | **Administrator** |
+| Mot de passe | **Azerty1\*** |
+| Adresse IP fixe | **172.16.10.5/24** |
+
+
+
+
+
+
 1. Serveur Windows Server 2022  
    Nom : **SRVWIN01**  
    Compte : **Administrator**  
