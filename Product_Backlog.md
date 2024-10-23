@@ -49,8 +49,8 @@ William :
 Mohammed :  
 Bruno :  
 
-| Type        | Cible             | Tâche                                                                    | Opérateur Bash | Opérateur PowerShell |
-|-------------|-------------------|--------------------------------------------------------------------------|----------------|----------------------|
+| Type        | Cible             | Tâche                                                                    | Bash | PowerShell |
+|-------------|-------------------|--------------------------------------------------------------------------|------|------------|
 | Action      | Utilisateur       | Création de compte utilisateur local                                     |
 | Action      | Utilisateur       | Changement de mot de passe                                               |
 | Action      | Utilisateur       | Suppression de compte utilisateur local                                  |
