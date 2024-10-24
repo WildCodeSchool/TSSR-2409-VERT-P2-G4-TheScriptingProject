@@ -21,7 +21,7 @@ cat Team.txt
 ### :runner: :two: Sprint semaine 01 - Labos et codage
 #### 1. Sprint backlog
 
-1a. Mise en place du labos pour tous les membres
+1a. Mise en place du labos pour tous les membres.
 | Distribution | Windows Server 2022 | Debian 12 | Windows 10 | Ubuntu 22.04 |  
 |:---:|:---:|:---:|:---:|:---:|
 | Nom | **SRVWIN01** | **SRVLX01** | **CLIWIN01** | **CLILIN01** |
@@ -29,23 +29,23 @@ cat Team.txt
 | Mot de passe | **Azerty1\*** | **Azerty1\*** | **Azerty1\*** | **Azerty1\*** |
 | Adresse IP fixe | **172.16.10.5/24** | **172.16.10.10/24** | **172.16.10.20/24** | **172.16.10.30/24** |
 
-1b. Etablir un plan schématique du script final
+1b. Etablir un plan schématique du script final.
 
-1c. Développement des premières briques indépendantes et enregistrement dans une doc.
-- Création de compte utilisateur local
-- Changement de mot de passe
-- Suppression de compte utilisateur local
-- Désactivation de compte utilisateur local
-- Ajout à un groupe d'administration
-- Ajout à un groupe local
-- Sortie d’un groupe local
-- Arrêt
-- Redémarrage
-- Verrouillage
-- Mise-à-jour du système
-- Création de répertoire
-- Modification de répertoire
-- Suppression de répertoire
+1c. Développement des premières briques indépendantes et enregistrement dans une doc.  
+:arrow_right: Action/Utilisateur : Création de compte utilisateur local  
+:arrow_right: Action/Utilisateur : Changement de mot de passe  
+:arrow_right: Action/Utilisateur : Suppression de compte utilisateur local  
+:arrow_right: Action/Utilisateur : Désactivation de compte utilisateur local  
+:arrow_right: Action/Utilisateur : Ajout à un groupe d'administration  
+:arrow_right: Action/Utilisateur : Ajout à un groupe local  
+:arrow_right: Action/Utilisateur : Sortie d’un groupe local  
+:arrow_right: Action/Ordinateur client : Arrêt  
+:arrow_right: Action/Ordinateur client : Redémarrage  
+:arrow_right: Action/Ordinateur client : Verrouillage  
+:arrow_right: Action/Ordinateur client : Mise-à-jour du système  
+:arrow_right: Action/Ordinateur client : Création de répertoire  
+:arrow_right: Action/Ordinateur client : Modification de répertoire  
+:arrow_right: Action/Ordinateur client : Suppression de répertoire  
 
 #### 2. Sprint review
 :ok: Les labos sont fonctionnels.  
@@ -59,32 +59,18 @@ cat Team.txt
 #### 1. Sprint backlog
 #### 2. Sprint review
 
-Souhail :  
-William :  
-Mohammed :  
-Bruno :  
-
 ---
 
 ### :runner: :four: Sprint semaine 03 - Répartition des tâches de codages + bilan
 #### 1. Sprint backlog
 #### 2. Sprint review
 
-Souhail :  
-William :  
-Mohammed :  
-Bruno :  
-
 ---
 
 ### :runner: :five: Sprint semaine 04 - Répartition des tâches de codages + Rédactions des documents finaux
 #### 1. Sprint backlog
 #### 2. Sprint review
-
-Souhail :  
-William :  
-Mohammed :  
-Bruno :  
+ 
 
 | Type        | Cible             | Tâche                                                                    | Bash | PowerShell |
 |-------------|-------------------|--------------------------------------------------------------------------|------|------------|
