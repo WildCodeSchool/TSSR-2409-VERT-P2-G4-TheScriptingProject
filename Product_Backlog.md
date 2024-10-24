@@ -72,8 +72,8 @@ cat Team.txt
 #### 2. Sprint review
  
 
-| Type        | Cible             | Tâche                                                                    | Bash | PowerShell |
-|-------------|-------------------|--------------------------------------------------------------------------|------|------------|
+| Type        | Cible             | Tâche                                                                    |
+|-------------|-------------------|--------------------------------------------------------------------------|
 | Action      | Utilisateur       | Création de compte utilisateur local                                     |
 | Action      | Utilisateur       | Changement de mot de passe                                               |
 | Action      | Utilisateur       | Suppression de compte utilisateur local                                  |
