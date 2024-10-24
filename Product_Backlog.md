@@ -8,14 +8,18 @@ cat Team.txt
 >Mohammed  
 >William  
 
+---
 
-### :one: Chaque semaine - Définir un `$SM` et un `$PO`
+### :trident: :one: Chaque semaine - Définir un `$SM` et un `$PO`
 - Semaine 01 `SM=Souhail && PO=William`
 - Semaine 02 `SM=        && PO=       `
 - Semaine 03 `SM=        && PO=       `
 - Semaine 04 `SM=        && PO=       `
 
+---
+
 ### :runner: :two: Sprint semaine 01 - Labos et compréhension
+#### 1. Sprint backlog
 
 | Distribution | Windows Server 2022 | Debian 12 | Windows 10 | Ubuntu 22.04 |  
 |:---:|:---:|:---:|:---:|:---:|
@@ -23,7 +27,9 @@ cat Team.txt
 | Compte | **Administrator** | **root** | **wilder** | **wilder** |
 | Mot de passe | **Azerty1\*** | **Azerty1\*** | **Azerty1\*** | **Azerty1\*** |
 | Adresse IP fixe | **172.16.10.5/24** | **172.16.10.10/24** | **172.16.10.20/24** | **172.16.10.30/24** |
+#### 2. Sprint review
 
+---
 
 ### :runner: :three: Sprint semaine 02 - Répartition des tâches de codages + bilan
 #### 1. Sprint backlog
@@ -34,6 +40,8 @@ William :
 Mohammed :  
 Bruno :  
 
+---
+
 ### :runner: :four: Sprint semaine 03 - Répartition des tâches de codages + bilan
 #### 1. Sprint backlog
 #### 2. Sprint review
@@ -42,6 +50,8 @@ Souhail :
 William :  
 Mohammed :  
 Bruno :  
+
+---
 
 ### :runner: :five: Sprint semaine 04 - Répartition des tâches de codages + Rédactions des documents finaux
 #### 1. Sprint backlog
