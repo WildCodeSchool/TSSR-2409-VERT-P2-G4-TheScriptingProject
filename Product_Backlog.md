@@ -21,7 +21,7 @@ cat Team.txt
 ### :runner: :two: Sprint semaine 01 - Labos et codage
 #### 1. Sprint backlog
 
-a. Mise en place du labos pour tous les membres
+1a. Mise en place du labos pour tous les membres
 | Distribution | Windows Server 2022 | Debian 12 | Windows 10 | Ubuntu 22.04 |  
 |:---:|:---:|:---:|:---:|:---:|
 | Nom | **SRVWIN01** | **SRVLX01** | **CLIWIN01** | **CLILIN01** |
@@ -29,9 +29,9 @@ a. Mise en place du labos pour tous les membres
 | Mot de passe | **Azerty1\*** | **Azerty1\*** | **Azerty1\*** | **Azerty1\*** |
 | Adresse IP fixe | **172.16.10.5/24** | **172.16.10.10/24** | **172.16.10.20/24** | **172.16.10.30/24** |
 
-b. Etablir un pseudo-code pour le script
+1b. Etablir un plan schématique du script final
 
-c. Développement des premières briques indépendantes et enregistrement dans une doc.
+1c. Développement des premières briques indépendantes et enregistrement dans une doc.
 - Création de compte utilisateur local
 - Changement de mot de passe
 - Suppression de compte utilisateur local
@@ -48,10 +48,10 @@ c. Développement des premières briques indépendantes et enregistrement dans u
 - Suppression de répertoire
 
 #### 2. Sprint review
-- Les labos sont fonctionnels
-- Le pseudo-code n'est pas fait, manque de compréhension sur le comportement du script
-- Les lignes prévues ont été codées
-- Résolution d'un problème avec `case`
+:ok: Les labos sont fonctionnels.  
+:warning: Le plan schématique n'est pas fait, manque de compréhension sur le comportement du script.  
+:ok: Les lignes prévues ont été codées et sauvegardées dans une doc.  
+:ok: Résolution d'un problème avec `case`.  
 
 ---
 
