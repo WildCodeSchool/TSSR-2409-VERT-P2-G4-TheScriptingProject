@@ -86,13 +86,13 @@ cat Team.txt
 
 #### 2. Sprint review
 
- 1a. :ok: Mise en place du réseau pour la moitié des membres : beaucoup de difficultés à se connecter en ssh
- 1b. :ok: Mise en place du squelette du script bash
- 1c. :ok: Mise en place de l'invite de commande pour le choix des actions
- 1d. :warning: Finaliser le processus ssh pour executer les actions sur le client
- 1e. :warning: Terminer le script bash
- 1f. :warning: Mise en place du squelette du script powershell
- 1g. :warning: Répartition des différentes taches
+ 1a. :ok: Mise en place du réseau pour la moitié des membres : beaucoup de difficultés à se connecter en ssh  
+ 1b. :ok: Mise en place du squelette du script bash  
+ 1c. :ok: Mise en place de l'invite de commande pour le choix des actions  
+ 1d. :warning: Finaliser le processus ssh pour executer les actions sur le client  
+ 1e. :warning: Terminer le script bash  
+ 1f. :warning: Mise en place du squelette du script powershell  
+ 1g. :warning: Répartition des différentes taches  
  
 ---
 
