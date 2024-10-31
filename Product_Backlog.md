@@ -92,13 +92,13 @@ cat Team.txt
 
  1c. :ok: Mise en place de l'invite de commande pour le choix des actions
 
- 1d. Finaliser le processus ssh pour executer les actions sur le client
+ 1d. :warning: Finaliser le processus ssh pour executer les actions sur le client
 
- 1e. Terminer le script bash
+ 1e. :warning: Terminer le script bash
 
- 1f. Mise en place du squelette du script powershell
+ 1f. :warning: Mise en place du squelette du script powershell
 
- 1g. Répartition des différentes taches
+ 1g. :warning: Répartition des différentes taches
  
 ---
 
