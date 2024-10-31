@@ -62,7 +62,7 @@ cat Team.txt
 
 1b. Mise en place de la structure du script
 
-1c. Développement des dernières briques indépendantes et enregistrement dans une doc.
+1c. Développement des dernières briques indépendantes et enregistrement dans une doc. 
 :arrow_right: Information/Utilisateur : Date de dernière connexion d’un utilisateur 
 :arrow_right: Information/Utilisateur : Date de dernière modification du mot de passe 
 :arrow_right: Information/Utilisateur : Liste des sessions ouvertes par l'utilisateur 
