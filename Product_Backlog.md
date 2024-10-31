@@ -90,7 +90,16 @@ cat Team.txt
 
  1b. :ok: Mise en place du squelette du script bash
 
- 1c. 
+ 1c. :ok: Mise en place de l'invite de commande pour le choix des actions
+
+ 1d. Finaliser le processus ssh pour executer les actions sur le client
+
+ 1e. Terminer le script bash
+
+ 1f. Mise en place du squelette du script powershell
+
+ 1g. Répartition des différentes taches
+ 
 ---
 
 ### :runner: :four: Sprint semaine 03 - Répartition des tâches de codages + bilan
