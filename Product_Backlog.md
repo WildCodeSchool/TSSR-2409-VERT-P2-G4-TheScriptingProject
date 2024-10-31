@@ -63,25 +63,25 @@ cat Team.txt
 1b. Mise en place de la structure du script
 
 1c. Développement des dernières briques indépendantes et enregistrement dans une doc.  
-:arrow_right: Information/Utilisateur : Date de dernière connexion d’un utilisateur 
-:arrow_right: Information/Utilisateur : Date de dernière modification du mot de passe 
-:arrow_right: Information/Utilisateur : Liste des sessions ouvertes par l'utilisateur 
-:arrow_right: Information/Utilisateur : Groupe d’appartenance d’un utilisateur 
-:arrow_right: Information/Utilisateur : Historique des commandes exécutées par l'utilisateur 
-:arrow_right: Information/Utilisateur : Droits/permissions de l’utilisateur sur un dossier 
-:arrow_right: Information/Utilisateur :  Droits/permissions de l’utilisateur sur un fichier 
-:arrow_right: Information/Ordinateur client : Version de l'OS 
-:arrow_right: Information/Ordinateur client : Nombre de disque 
-:arrow_right: Information/Ordinateur client : Partition (nombre, nom, FS, taille) par disque 
-:arrow_right: Information/Ordinateur client : Espace disque restant par partition/volume 
-:arrow_right: Information/Ordinateur client : Nom et espace disque d'un dossier (nom de dossier demandé)  
-:arrow_right: Information/Ordinateur client : Liste des lecteurs monté (disque, CD, etc.) 
-:arrow_right: Information/Ordinateur client : Nombre d'interface 
-:arrow_right: Information/Ordinateur client : Adresse IP de chaque interface 
-:arrow_right: Information/Ordinateur client : Adresse Mac 
-:arrow_right: Information/Ordinateur client : Liste des ports ouverts 
-:arrow_right: Information/Ordinateur client : Statut du pare-feu 
-:arrow_right: Information/Script : Recherche des evenements dans le fichier log_evt.log pour un utilisateur 
+:arrow_right: Information/Utilisateur : Date de dernière connexion d’un utilisateur  
+:arrow_right: Information/Utilisateur : Date de dernière modification du mot de passe  
+:arrow_right: Information/Utilisateur : Liste des sessions ouvertes par l'utilisateur  
+:arrow_right: Information/Utilisateur : Groupe d’appartenance d’un utilisateur  
+:arrow_right: Information/Utilisateur : Historique des commandes exécutées par l'utilisateur  
+:arrow_right: Information/Utilisateur : Droits/permissions de l’utilisateur sur un dossier  
+:arrow_right: Information/Utilisateur :  Droits/permissions de l’utilisateur sur un fichier  
+:arrow_right: Information/Ordinateur client : Version de l'OS  
+:arrow_right: Information/Ordinateur client : Nombre de disque  
+:arrow_right: Information/Ordinateur client : Partition (nombre, nom, FS, taille) par disque  
+:arrow_right: Information/Ordinateur client : Espace disque restant par partition/volume  
+:arrow_right: Information/Ordinateur client : Nom et espace disque d'un dossier (nom de dossier demandé)   
+:arrow_right: Information/Ordinateur client : Liste des lecteurs monté (disque, CD, etc.)  
+:arrow_right: Information/Ordinateur client : Nombre d'interface  
+:arrow_right: Information/Ordinateur client : Adresse IP de chaque interface  
+:arrow_right: Information/Ordinateur client : Adresse Mac  
+:arrow_right: Information/Ordinateur client : Liste des ports ouverts  
+:arrow_right: Information/Ordinateur client : Statut du pare-feu  
+:arrow_right: Information/Script : Recherche des evenements dans le fichier log_evt.log pour un utilisateur  
 :arrow_right: Information/Script :Recherche des evenements dans le fichier log_evt.log pour un ordinateur 
 
 #### 2. Sprint review
