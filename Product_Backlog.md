@@ -100,6 +100,13 @@ cat Team.txt
 :arrow_right: Information/Script : Recherche des evenements dans le fichier log_evt.log pour un utilisateur  
 :arrow_right: Information/Script :Recherche des evenements dans le fichier log_evt.log pour un ordinateur 
 #### 2. Sprint review
+:alarm_clock: :warning: Terminer le script Bash  
+:alarm_clock: :warning: Développer et terminer le script PowerShell  
+:ok: VM et connection ssh opérationnels  
+:ok: Toutes les briques Bash fonctionnent  
+:ok: Menu et sous-menu opérationnels  
+:warning: Compilation générale du script  
+:warning: Logs  
 
 ---
 
