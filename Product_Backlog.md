@@ -105,6 +105,7 @@ cat Team.txt
 :ok: VM et connection ssh opérationnels  
 :ok: Toutes les briques Bash fonctionnent  
 :ok: Menu et sous-menu opérationnels  
+:ok: Execution à distance  
 :warning: Compilation générale du script  
 :warning: Logs  
 
