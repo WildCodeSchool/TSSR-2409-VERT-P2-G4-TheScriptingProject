@@ -117,53 +117,53 @@ cat Team.txt
  
 ---
 ### :battery: :five: Etat d'avancement des briques des scripts
----- Non codé  
-:hand: Seulement codé  
-:+1: Codé et intégré au script  
+:x: Non codé  
+:pencil2: En cours de codage  
+:white_check_mark: Codé et intégré au script  
   
 
 | Type        | Cible             | Tâche                                                                    | Bash | PowerShell |
 |-------------|-------------------|--------------------------------------------------------------------------|------|------------|
-| Action      | Utilisateur       | Création de compte utilisateur local                                     |:+1:|----|
-| Action      | Utilisateur       | Changement de mot de passe                                               |:+1:|----|
-| Action      | Utilisateur       | Suppression de compte utilisateur local                                  |:+1:|----|
-| Action      | Utilisateur       | Désactivation de compte utilisateur local                                |:+1:|----|
-| Action      | Utilisateur       | Ajout à un groupe d'administration                                       |:+1:|----|
-| Action      | Utilisateur       | Ajout à un groupe local                                                  |:+1:|----|
-| Action      | Utilisateur       | Sortie d’un groupe local                                                 |:+1:|----|
-| Action      | Ordinateur client | Arrêt                                                                    |:+1:|----|
-| Action      | Ordinateur client | Redémarrage                                                              |:+1:|----|
-| Action      | Ordinateur client | Verrouillage                                                             |:+1:|----|
-| Action      | Ordinateur client | Mise-à-jour du système                                                   |:+1:|----|
-| Action      | Ordinateur client | Création de répertoire                                                   |:+1:|----|
-| Action      | Ordinateur client | Modification de répertoire                                               |:+1:|----|
-| Action      | Ordinateur client | Suppression de répertoire                                                |:+1:|----|
-| Action      | Ordinateur client | Prise de main à distance (GUI)                                           |----|----|
-| Action      | Ordinateur client | Activation du pare-feu                                                   |:+1:|----|
-| Action      | Ordinateur client | Désactivation du pare-feu                                                |:+1:|----|
-| Action      | Ordinateur client | Installation de logiciel                                                 |:+1:|----|
-| Action      | Ordinateur client | Désinstallation de logiciel                                              |:+1:|----|
-| Action      | Ordinateur client | Exécution de script sur la machine distante                              |:+1:|----|
-| Information | Utilisateur       | Date de dernière connexion d’un utilisateur                              |:+1:|----|
-| Information | Utilisateur       | Date de dernière modification du mot de passe                            |:+1:|----|
-| Information | Utilisateur       | Liste des sessions ouvertes par l'utilisateur                            |:+1:|----|
-| Information | Utilisateur       | Groupe d’appartenance d’un utilisateur                                   |:+1:|----|
-| Information | Utilisateur       | Historique des commandes exécutées par l'utilisateur                     |:+1:|----|
-| Information | Utilisateur       | Droits/permissions de l’utilisateur sur un dossier                       |:+1:|----|
-| Information | Utilisateur       | Droits/permissions de l’utilisateur sur un fichier                       |:+1:|----|
-| Information | Ordinateur client | Version de l'OS                                                          |:+1:|----|
-| Information | Ordinateur client | Nombre de disque                                                         |:+1:|----|
-| Information | Ordinateur client | Partition (nombre, nom, FS, taille) par disque                           |:+1:|----|
-| Information | Ordinateur client | Espace disque restant par partition/volume                               |:+1:|----|
-| Information | Ordinateur client | Nom et espace disque d'un dossier (nom de dossier demandé)               |:+1:|----|
-| Information | Ordinateur client | Liste des lecteurs monté (disque, CD, etc.)                              |:+1:|----|
-| Information | Ordinateur client | Nombre d'interface                                                       |:+1:|----|
-| Information | Ordinateur client | Adresse IP de chaque interface                                           |:+1:|----|
-| Information | Ordinateur client | Adresse Mac                                                              |:+1:|----|
-| Information | Ordinateur client | Liste des ports ouverts                                                  |:+1:|----|
-| Information | Ordinateur client | Statut du pare-feu                                                       |:+1:|----|
-| Information | Script            | Recherche des evenements dans le fichier log_evt.log pour un utilisateur |:+1:|----|
-| Information | Script            | Recherche des evenements dans le fichier log_evt.log pour un ordinateur  |:+1:|----|
-| Générale    | Script            | Compilation générale du script                                           |----|----|
-| Générale    | Script            | Mise en forme et présentation des menus                                  |----|----|
-| Générale    | Script            | Etat d'avancement en pourcentage                                         |----|----|
+| Action      | Utilisateur       | Création de compte utilisateur local                                     |:white_check_mark:|:x:|
+| Action      | Utilisateur       | Changement de mot de passe                                               |:white_check_mark:|:x:|
+| Action      | Utilisateur       | Suppression de compte utilisateur local                                  |:white_check_mark:|:x:|
+| Action      | Utilisateur       | Désactivation de compte utilisateur local                                |:white_check_mark:|:x:|
+| Action      | Utilisateur       | Ajout à un groupe d'administration                                       |:white_check_mark:|:x:|
+| Action      | Utilisateur       | Ajout à un groupe local                                                  |:white_check_mark:|:x:|
+| Action      | Utilisateur       | Sortie d’un groupe local                                                 |:white_check_mark:|:x:|
+| Action      | Ordinateur client | Arrêt                                                                    |:white_check_mark:|:pencil2:|
+| Action      | Ordinateur client | Redémarrage                                                              |:white_check_mark:|:pencil2:|
+| Action      | Ordinateur client | Verrouillage                                                             |:white_check_mark:|:pencil2:|
+| Action      | Ordinateur client | Mise-à-jour du système                                                   |:white_check_mark:|:pencil2:|
+| Action      | Ordinateur client | Création de répertoire                                                   |:white_check_mark:|:pencil2:|
+| Action      | Ordinateur client | Modification de répertoire                                               |:white_check_mark:|:x:|
+| Action      | Ordinateur client | Suppression de répertoire                                                |:white_check_mark:|:pencil2:|
+| Action      | Ordinateur client | Prise de main à distance (GUI)                                           |:pencil2:|:x:|
+| Action      | Ordinateur client | Activation du pare-feu                                                   |:white_check_mark:|:x:|
+| Action      | Ordinateur client | Désactivation du pare-feu                                                |:white_check_mark:|:x:|
+| Action      | Ordinateur client | Installation de logiciel                                                 |:white_check_mark:|:x:|
+| Action      | Ordinateur client | Désinstallation de logiciel                                              |:white_check_mark:|:x:|
+| Action      | Ordinateur client | Exécution de script sur la machine distante                              |:white_check_mark:|:x:|
+| Information | Utilisateur       | Date de dernière connexion d’un utilisateur                              |:white_check_mark:|:x:|
+| Information | Utilisateur       | Date de dernière modification du mot de passe                            |:white_check_mark:|:x:|
+| Information | Utilisateur       | Liste des sessions ouvertes par l'utilisateur                            |:white_check_mark:|:x:|
+| Information | Utilisateur       | Groupe d’appartenance d’un utilisateur                                   |:white_check_mark:|:x:|
+| Information | Utilisateur       | Historique des commandes exécutées par l'utilisateur                     |:white_check_mark:|:x:|
+| Information | Utilisateur       | Droits/permissions de l’utilisateur sur un dossier                       |:white_check_mark:|:x:|
+| Information | Utilisateur       | Droits/permissions de l’utilisateur sur un fichier                       |:white_check_mark:|:x:|
+| Information | Ordinateur client | Version de l'OS                                                          |:white_check_mark:|:pencil2:|
+| Information | Ordinateur client | Nombre de disque                                                         |:white_check_mark:|:pencil2:|
+| Information | Ordinateur client | Partition (nombre, nom, FS, taille) par disque                           |:white_check_mark:|:pencil2:|
+| Information | Ordinateur client | Espace disque restant par partition/volume                               |:white_check_mark:|:pencil2:|
+| Information | Ordinateur client | Nom et espace disque d'un dossier (nom de dossier demandé)               |:white_check_mark:|:pencil2:|
+| Information | Ordinateur client | Liste des lecteurs monté (disque, CD, etc.)                              |:white_check_mark:|:pencil2:|
+| Information | Ordinateur client | Nombre d'interface                                                       |:white_check_mark:|:pencil2:|
+| Information | Ordinateur client | Adresse IP de chaque interface                                           |:white_check_mark:|:pencil2:|
+| Information | Ordinateur client | Adresse Mac                                                              |:white_check_mark:|:pencil2:|
+| Information | Ordinateur client | Liste des ports ouverts                                                  |:white_check_mark:|:pencil2:|
+| Information | Ordinateur client | Statut du pare-feu                                                       |:white_check_mark:|:pencil2:|
+| Information | Script            | Recherche des evenements dans le fichier log_evt.log pour un utilisateur |:pencil2:|:x:|
+| Information | Script            | Recherche des evenements dans le fichier log_evt.log pour un ordinateur  |:pencil2:|:x:|
+| Général     | Script            | Compilation générale du script                                           |:pencil2:|:x:|
+| Général     | Script            | Mise en forme et présentation des menus                                  |:pencil2:|:x:|
+| Général     | Script            | Etat d'avancement en pourcentage                                         |93%|----|
