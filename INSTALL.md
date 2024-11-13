@@ -47,12 +47,12 @@ Pour se faire nous avons choisi de configurer 2 cartes réseaux par machines , l
 
  Pour le serveur Debian:
 
- 1 ouvrir le fichier de configuration des interfaces 
- ' nano /etc/network/interfaces '
- 2 modifier le fichier :
- ' iface enp0s3 inet static 
-       address 172.16.10.10/24
-       gateway 172.16.10.1 '
+ 1 ouvrir le fichier de configuration des interfaces  
+ ' nano /etc/network/interfaces ' 
+ 2 modifier le fichier : 
+ ' iface enp0s3 inet static  
+       address 172.16.10.10/24 
+       gateway 172.16.10.1 ' 
  
 
  
