@@ -33,7 +33,7 @@
 Pour le projet , toutes les machines doivent être sur le même réseau .
 Pour se faire nous avons choisi de configurer 2 cartes réseaux par machines , la 1er en automatique , configuré en pont et la 2eme en IP fixe configuré en réseau internet
 
- -*Configuration adresse IP fixe*-
+ #*Configuration adresse IP fixe*#
 
  Pour la machines Ubuntu:
  
@@ -81,9 +81,9 @@ Pour se faire nous avons choisi de configurer 2 cartes réseaux par machines , l
    - Valider les paramètres par défaut pour l'emplacement fichier  
     
    - laisser vide pour la passphrase ete valider  
-   - 
+    
    - Pour ajouter le clé publique sur le client  
-   - 
+    
      ` ssh-copy-id -i ~/.ssh/id_ecdsa.pub client@<ip_client> `  
      
    - entrer "yes" et entrer le mot de passe du client 
