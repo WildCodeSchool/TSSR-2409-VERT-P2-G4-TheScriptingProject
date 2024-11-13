@@ -37,13 +37,20 @@ Pour se faire nous avons choisi de configurer 2 cartes réseaux par machines , l
 
  Pour la machines Ubuntu:
  
- 1 Ouvrir le panneau de configuration interfaces enp0s3  
+ 1 Ouvrir le panneau de configuration interfaces enp0s3
+ 
  2 Aller sur IPv4  
+ 
  3 Cliquer sur "Manual" 
- 4 Entrer Address 172.16.10.30 / Netmask 255.255.255.0 / Gateway 172.16.10.10  
+ 
+ 4 Entrer Address 172.16.10.30 / Netmask 255.255.255.0 / Gateway 172.16.10.10 
+ 
  5 Appliquer  
+ 
  6 Désactiver et réactiver l'interface  
+ 
  7 Vérifier l'adresse IP  
+ 
 
  Pour le serveur Debian:
 
@@ -61,15 +68,20 @@ Pour se faire nous avons choisi de configurer 2 cartes réseaux par machines , l
 
  2 Mise en place clé SSH Linux 
 
- Sur le serveur Linux : Générer une clé SSH** :
-   - Exécutez la commande suivante pour générer une clé SSH :
+ Sur le serveur Linux : Générer une clé SSH** :  
+ 
+   - Exécutez la commande suivante pour générer une clé SSH :  
      `
-     ssh-keygen -t ecdsa
+     ssh-keygen -t ecdsa  
      `
-   - Valider les paramètres par défaut pour l'emplacement fichier
-   - laisser vide pour la passphrase ete valider
-   - Pour ajouter le clé publique sur le client
-     ` ssh-copy-id -i ~/.ssh/id_ecdsa.pub client@<ip_client> `
+   - Valider les paramètres par défaut pour l'emplacement fichier  
+    
+   - laisser vide pour la passphrase ete valider  
+   - 
+   - Pour ajouter le clé publique sur le client  
+   - 
+     ` ssh-copy-id -i ~/.ssh/id_ecdsa.pub client@<ip_client> `  
+     
    - entrer "yes" et entrer le mot de passe du client 
      
  
