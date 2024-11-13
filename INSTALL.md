@@ -33,7 +33,7 @@
 Pour le projet , toutes les machines doivent être sur le même réseau .
 Pour se faire nous avons choisi de configurer 2 cartes réseaux par machines , la 1er en automatique , configuré en pont et la 2eme en IP fixe configuré en réseau internet
 
- 1 Configuration adresse IP fixe 
+ -*Configuration adresse IP fixe*-
 
  Pour la machines Ubuntu:
  
@@ -55,9 +55,13 @@ Pour se faire nous avons choisi de configurer 2 cartes réseaux par machines , l
  Pour le serveur Debian:
 
  1 ouvrir le fichier de configuration des interfaces  
+ 
  ` nano /etc/network/interfaces` 
+ 
  2 modifier le fichier : 
+ 
  ` iface enp0s3 inet static  
+ 
        address 172.16.10.10/24 
        gateway 172.16.10.1 `
 
@@ -66,9 +70,9 @@ Pour se faire nous avons choisi de configurer 2 cartes réseaux par machines , l
  Configurer direct dans l'interfaces 
 
 
- 2 Mise en place clé SSH Linux 
+*2 Mise en place clé SSH Linux* 
 
- Sur le serveur Linux : Générer une clé SSH** :  
+ Sur le serveur Linux : Générer une clé SSH :  
  
    - Exécutez la commande suivante pour générer une clé SSH :  
      `
