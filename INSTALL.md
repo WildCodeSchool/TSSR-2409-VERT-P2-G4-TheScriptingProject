@@ -70,7 +70,7 @@ Pour se faire nous avons choisi de configurer 2 cartes réseaux par machines , l
  Configurer direct dans l'interfaces 
 
 
- # *Mise en place clé SSH Linux* #
+ ## *Mise en place clé SSH Linux* ##
 
  Sur le serveur Linux : Générer une clé SSH :  
  
