@@ -37,20 +37,20 @@ Pour se faire nous avons choisi de configurer 2 cartes réseaux par machines , l
 
  Pour la machines Ubuntu:
  
- 1 Ouvrir le panneau de configuration interfaces enp0s3
+ 1 Ouvrir le panneau de configuration interfaces enp0s3 
  2 Aller sur IPv4 
  3 Cliquer sur "Manual" 
- 4 Entrer Address 172.16.10.30 / Netmask 255.255.255.0 / Gateway 172.16.10.1 
- 5 Appliquer  
+ 4 Entrer Address 172.16.10.30 / Netmask 255.255.255.0 / Gateway 172.16.10.10 
+ 5 Appliquer 
  6 Désactiver et réactiver l'interface 
  7 Vérifier l'adresse IP 
 
  Pour le serveur Debian:
 
  1 ouvrir le fichier de configuration des interfaces 
- ' nano /etc/network/interfaces
+ ' nano /etc/network/interfaces '
  2 modifier le fichier :
- 'iface enp0s3 inet static 
+ ' iface enp0s3 inet static 
        address 172.16.10.10/24
        gateway 172.16.10.1 '
  
