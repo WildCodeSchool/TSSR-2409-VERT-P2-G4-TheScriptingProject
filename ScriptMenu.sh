@@ -1,5 +1,25 @@
 #!/bin/bash
 
+# Dessin au début du script
+echo -e "  _____________________ "
+echo -e " |  _________________  |"
+echo -e " | |                 | |"
+echo -e " | |\033[33mwilder@wcs\033[m:\033[94m~\033[m$    | |"
+echo -e " | | cat Team.txt    | |"
+echo -e " | |                 | |"
+echo -e " | | \033[92mWild Code School\033[m| |"
+echo -e " | |    \033[92mSKILLS\033[m       | |"
+echo -e " | |       \033[92mB.M.S.W\033[m   | |"
+echo -e " | |_________________| |"
+echo -e " |_____________________|"
+echo -e "       _[_______]_"
+echo -e " _____[___________]_____ "
+echo -e "|      \033[91mcd\033[m[_______] []   |"
+echo -e "|  \033[91mfloppy\033[m[_______] []   |"
+echo -e "|_______________________|"
+
+
+
 # Menu du script
 
 read -p "Adresse IP cible : " IPCible
