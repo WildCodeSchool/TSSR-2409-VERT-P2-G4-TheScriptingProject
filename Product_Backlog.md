@@ -116,7 +116,7 @@ cat Team.txt
 #### 2. Sprint review
  
 ---
-### :battery: :five: Etat d'avancement des briques des scripts
+### :battery: :five: Etat d'avancement des briques de script
 :x: Non codé  
 :pencil2: En cours de codage  
 :white_check_mark: Codé et intégré au script  
