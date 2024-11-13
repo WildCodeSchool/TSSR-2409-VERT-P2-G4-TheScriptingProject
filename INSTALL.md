@@ -63,9 +63,15 @@ Pour se faire nous avons choisi de configurer 2 cartes réseaux par machines , l
 
  Sur le serveur Linux : Générer une clé SSH** :
    - Exécutez la commande suivante pour générer une clé SSH :
-     ```bash
+     `
      ssh-keygen -t ecdsa
-     ```
+     `
+   - Valider les paramètres par défaut pour l'emplacement fichier
+   - laisser vide pour la passphrase ete valider
+   - Pour ajouter le clé publique sur le client
+     ` ssh-copy-id -i ~/.ssh/id_ecdsa.pub client@<ip_client> `
+   - entrer "yes" et entrer le mot de passe du client 
+     
  
  
 
