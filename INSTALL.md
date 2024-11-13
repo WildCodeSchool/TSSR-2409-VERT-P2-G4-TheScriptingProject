@@ -35,9 +35,22 @@ Pour se faire nous avons choisi de configurer 2 cartes réseaux par machines , l
 
  1 Configuration adresse IP fixe 
 
- Pour les machines Debian/Ubuntu:
+ Pour la machines Ubuntu:
  
- 1 Ouvrir le fichier de configuration interfaces
+ 1 Ouvrir le panneau de configuration interfaces enp0s3
+ 2 Aller sur IPv4 
+ 3 Cliquer sur "Manual"
+ 4 Entrer Address 172.16.10.30 / Netmask 255.255.255.0 / Gateway 172.16.10.1
+ 5 Appliquer 
+ 6 Désactiver et réactiver l'interface
+ 7 Vérifier l'adresse IP
 
-  `sudo nano /etc/network/interfaces`
+ Pour le serveur Debian:
+
+ 1 ouvrir le fichier de configuration des interfaces
+ ' nano /etc/network/interfaces
+ 2
+ 
+
+ 
   
