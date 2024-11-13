@@ -283,7 +283,7 @@ sudo apt remove $UninstallPackage
 
 
 echo -e "Merci de choisir votre action en tapant :\n1 - Arrêter le système\n2 - Redémarrer le système\n3 - Vérrouiller la session\n4 - Mettre à jour le système\n5 - Créer un répertoire\n6 - Modifier un répertoire\n7 - Supprimer un répertoire\n8 - Activer le pare-feu\n9 - Désactiver le pare-feu\n10 - Installation de logiciel\n11 - Désinstallation de logiciel\n12 - Exécution de script sur la machine distante"
-read -p "Choix:"action
+read -p "Choix:" action
 
 	case "$action" in
                          1) arret ;;
