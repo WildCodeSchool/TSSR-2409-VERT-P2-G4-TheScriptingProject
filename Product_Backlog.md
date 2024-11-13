@@ -115,47 +115,55 @@ cat Team.txt
 #### 1. Sprint backlog
 #### 2. Sprint review
  
+---
+### :battery: :five: Etat d'avancement des briques des scripts
+---- Non codé  
+:hand: Seulement codé  
+:+1: Codé et intégré au script  
+  
 
-| Type        | Cible             | Tâche                                                                    |
-|-------------|-------------------|--------------------------------------------------------------------------|
-| Action      | Utilisateur       | Création de compte utilisateur local                                     |
-| Action      | Utilisateur       | Changement de mot de passe                                               |
-| Action      | Utilisateur       | Suppression de compte utilisateur local                                  |
-| Action      | Utilisateur       | Désactivation de compte utilisateur local                                |
-| Action      | Utilisateur       | Ajout à un groupe d'administration                                       |
-| Action      | Utilisateur       | Ajout à un groupe local                                                  |
-| Action      | Utilisateur       | Sortie d’un groupe local                                                 |
-| Action      | Ordinateur client | Arrêt                                                                    |
-| Action      | Ordinateur client | Redémarrage                                                              |
-| Action      | Ordinateur client | Verrouillage                                                             |
-| Action      | Ordinateur client | Mise-à-jour du système                                                   |
-| Action      | Ordinateur client | Création de répertoire                                                   |
-| Action      | Ordinateur client | Modification de répertoire                                               |
-| Action      | Ordinateur client | Suppression de répertoire                                                |
-| Action      | Ordinateur client | Prise de main à distance (GUI)                                           |
-| Action      | Ordinateur client | Activation du pare-feu                                                   |
-| Action      | Ordinateur client | Désactivation du pare-feu                                                |
-| Action      | Ordinateur client | Installation de logiciel                                                 |
-| Action      | Ordinateur client | Désinstallation de logiciel                                              |
-| Action      | Ordinateur client | Exécution de script sur la machine distante                              |
-| Information | Utilisateur       | Date de dernière connexion d’un utilisateur                              |
-| Information | Utilisateur       | Date de dernière modification du mot de passe                            |
-| Information | Utilisateur       | Liste des sessions ouvertes par l'utilisateur                            |
-| Information | Utilisateur       | Groupe d’appartenance d’un utilisateur                                   |
-| Information | Utilisateur       | Historique des commandes exécutées par l'utilisateur                     |
-| Information | Utilisateur       | Droits/permissions de l’utilisateur sur un dossier                       |
-| Information | Utilisateur       | Droits/permissions de l’utilisateur sur un fichier                       |
-| Information | Ordinateur client | Version de l'OS                                                          |
-| Information | Ordinateur client | Nombre de disque                                                         |
-| Information | Ordinateur client | Partition (nombre, nom, FS, taille) par disque                           |
-| Information | Ordinateur client | Espace disque restant par partition/volume                               |
-| Information | Ordinateur client | Nom et espace disque d'un dossier (nom de dossier demandé)               |
-| Information | Ordinateur client | Liste des lecteurs monté (disque, CD, etc.)                              |
-| Information | Ordinateur client | Nombre d'interface                                                       |
-| Information | Ordinateur client | Adresse IP de chaque interface                                           |
-| Information | Ordinateur client | Adresse Mac                                                              |
-| Information | Ordinateur client | Liste des ports ouverts                                                  |
-| Information | Ordinateur client | Statut du pare-feu                                                       |
-| Information | Script            | Recherche des evenements dans le fichier log_evt.log pour un utilisateur |
-| Information | Script            | Recherche des evenements dans le fichier log_evt.log pour un ordinateur  |
-
+| Type        | Cible             | Tâche                                                                    | Bash | PowerShell |
+|-------------|-------------------|--------------------------------------------------------------------------|------|------------|
+| Action      | Utilisateur       | Création de compte utilisateur local                                     |:+1:|----|
+| Action      | Utilisateur       | Changement de mot de passe                                               |:+1:|----|
+| Action      | Utilisateur       | Suppression de compte utilisateur local                                  |:+1:|----|
+| Action      | Utilisateur       | Désactivation de compte utilisateur local                                |:+1:|----|
+| Action      | Utilisateur       | Ajout à un groupe d'administration                                       |:+1:|----|
+| Action      | Utilisateur       | Ajout à un groupe local                                                  |:+1:|----|
+| Action      | Utilisateur       | Sortie d’un groupe local                                                 |:+1:|----|
+| Action      | Ordinateur client | Arrêt                                                                    |:+1:|----|
+| Action      | Ordinateur client | Redémarrage                                                              |:+1:|----|
+| Action      | Ordinateur client | Verrouillage                                                             |:+1:|----|
+| Action      | Ordinateur client | Mise-à-jour du système                                                   |:+1:|----|
+| Action      | Ordinateur client | Création de répertoire                                                   |:+1:|----|
+| Action      | Ordinateur client | Modification de répertoire                                               |:+1:|----|
+| Action      | Ordinateur client | Suppression de répertoire                                                |:+1:|----|
+| Action      | Ordinateur client | Prise de main à distance (GUI)                                           |----|----|
+| Action      | Ordinateur client | Activation du pare-feu                                                   |:+1:|----|
+| Action      | Ordinateur client | Désactivation du pare-feu                                                |:+1:|----|
+| Action      | Ordinateur client | Installation de logiciel                                                 |:+1:|----|
+| Action      | Ordinateur client | Désinstallation de logiciel                                              |:+1:|----|
+| Action      | Ordinateur client | Exécution de script sur la machine distante                              |:+1:|----|
+| Information | Utilisateur       | Date de dernière connexion d’un utilisateur                              |:+1:|----|
+| Information | Utilisateur       | Date de dernière modification du mot de passe                            |:+1:|----|
+| Information | Utilisateur       | Liste des sessions ouvertes par l'utilisateur                            |:+1:|----|
+| Information | Utilisateur       | Groupe d’appartenance d’un utilisateur                                   |:+1:|----|
+| Information | Utilisateur       | Historique des commandes exécutées par l'utilisateur                     |:+1:|----|
+| Information | Utilisateur       | Droits/permissions de l’utilisateur sur un dossier                       |:+1:|----|
+| Information | Utilisateur       | Droits/permissions de l’utilisateur sur un fichier                       |:+1:|----|
+| Information | Ordinateur client | Version de l'OS                                                          |:+1:|----|
+| Information | Ordinateur client | Nombre de disque                                                         |:+1:|----|
+| Information | Ordinateur client | Partition (nombre, nom, FS, taille) par disque                           |:+1:|----|
+| Information | Ordinateur client | Espace disque restant par partition/volume                               |:+1:|----|
+| Information | Ordinateur client | Nom et espace disque d'un dossier (nom de dossier demandé)               |:+1:|----|
+| Information | Ordinateur client | Liste des lecteurs monté (disque, CD, etc.)                              |:+1:|----|
+| Information | Ordinateur client | Nombre d'interface                                                       |:+1:|----|
+| Information | Ordinateur client | Adresse IP de chaque interface                                           |:+1:|----|
+| Information | Ordinateur client | Adresse Mac                                                              |:+1:|----|
+| Information | Ordinateur client | Liste des ports ouverts                                                  |:+1:|----|
+| Information | Ordinateur client | Statut du pare-feu                                                       |:+1:|----|
+| Information | Script            | Recherche des evenements dans le fichier log_evt.log pour un utilisateur |:+1:|----|
+| Information | Script            | Recherche des evenements dans le fichier log_evt.log pour un ordinateur  |:+1:|----|
+| Générale    | Script            | Compilation générale du script                                           |----|----|
+| Générale    | Script            | Mise en forme et présentation des menus                                  |----|----|
+| Générale    | Script            | Etat d'avancement en pourcentage                                         |----|----|
