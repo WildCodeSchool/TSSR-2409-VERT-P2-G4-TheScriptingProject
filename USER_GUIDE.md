@@ -1,4 +1,4 @@
-### Guide d'utilisation pour le script bash
+**<p align="center">Guide d'utilisation pour le script bash</p>**
 
 **1. Création de compte utilisateur local**  
 
