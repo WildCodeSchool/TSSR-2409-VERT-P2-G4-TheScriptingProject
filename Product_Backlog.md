@@ -14,7 +14,7 @@ cat Team.txt
 - Semaine 01 `SM=Souhail  && PO=William`
 - Semaine 02 `SM=Mohammed && PO=Bruno  `
 - Semaine 03 `SM=William  && PO=Souhail`
-- Semaine 04 `SM=         && PO=       `
+- Semaine 04 `SM=Bruno    && PO=Mohammed`
 
 ---
 
