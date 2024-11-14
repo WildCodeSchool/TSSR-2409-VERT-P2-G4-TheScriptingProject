@@ -370,7 +370,7 @@ ssh -t "$User@$IPCible" "sudo -S chage -l $User | grep 'Last password change' | 
 function session_open()
 {
 echo "Sessions ouvertes par l'utilisateur $User :"
-ssh -t "$User@$IPCible" "who | grep $U"
+ssh -t "$User@$IPCible" "who | grep $User"
 
 }
 
