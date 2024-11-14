@@ -1,13 +1,52 @@
 #!/bin/bash
 
+# Dessin au début du script
+echo -e "  _____________________ "
+echo -e " |  _________________  |"
+echo -e " | |                 | |"
+echo -e " | |\033[33mwilder@wcs\033[m:\033[94m~\033[m$    | |"
+echo -e " | | cat Team.txt    | |"
+echo -e " | |                 | |"
+echo -e " | | \033[92mWild Code School\033[m| |"
+echo -e " | |    \033[92mSKILLS\033[m       | |"
+echo -e " | |       \033[92mB.M.S.W\033[m   | |"
+echo -e " | |_________________| |"
+echo -e " |_____________________|"
+echo -e "       _[_______]_"
+echo -e " _____[___________]_____ "
+echo -e "|      \033[91mcd\033[m[_______] []   |"
+echo -e "|  \033[91mfloppy\033[m[_______] []   |"
+echo -e "|_______________________|"
+
+# Couleur menu
+neutre='\e[0;m'
+noir='\e[0;30m'
+gris='\e[1;30m'
+rougefonce='\e[0;31m'
+rose='\e[1;31m'
+vertfonce='\e[0;32m'
+vertclair='\e[1;32m'
+orange='\e[0;33m'
+jaune='\e[1;33m'
+bleufonce='\e[0;34m'
+bleuclair='\e[1;34m'
+violetfonce='\e[0;35m'
+violetclair='\e[1;35m'
+cyanfonce='\e[0;36m'
+cyanclair='\e[1;36m'
+grisclair='\e[0;37m'
+blanc='\e[1;37m'
+
 # Menu du script
 
 read -p "Adresse IP cible : " IPCible
 read -p "Nom d'utilisateur : " User
 
 while true; do
-echo -e "Veuillez séléctionner un numéro de choix :\n1 - Action sur utilisateur\n2 - Action sur ordinateur client\n3 - Information sur utilisateur\n4 - Information sur ordinateur client\n5 - Information sur script\nX - EXIT"
+echo -e "\n"$rougefonce"Veuillez séléctionner un numéro de choix :\n\n"$vertfonce"1 - Action sur utilisateur\n2 - Action sur ordinateur client\n3 - Information sur utilisateur\n4 - Information sur ordinateur client\n5 - Information sur script\nX - EXIT"
+echo -e $bleuclair
 read -p "Choix: " choix
+echo -e $neutre
 
 ####################################################################################
 ################### Réponses du script aux choix possibles ###########################
@@ -111,8 +150,10 @@ fi
 }
 
 while true; do
-echo -e "Merci de choisir votre action en tapant :\n1 - Créer un compte utilisateur\n2 - Changer le mot de passe d'un utilisateur\n3 - Supprimer un compte utilisateur\n4 - Désactiver un compte utilisateur\n5 - Ajouter à un groupe d'administrateur\n6 - Ajouter à un groupe local\n7 - Sortie d'un groupe local\nX - EXIT"
+echo -e "\n"$rougefonce"Merci de choisir votre action en tapant :\n\n"$vertfonce"1 - Créer un compte utilisateur\n2 - Changer le mot de passe d'un utilisateur\n3 - Supprimer un compte utilisateur\n4 - Désactiver un compte utilisateur\n5 - Ajouter à un groupe d'administrateur\n6 - Ajouter à un groupe local\n7 - Sortie d'un groupe local\nX - EXIT"
+echo -e $bleuclair
 read -p "Choix:" action 
+echo -e $neutre
 
         case "$action" in
                  1) create_user ;;
