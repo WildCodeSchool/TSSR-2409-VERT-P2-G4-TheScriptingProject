@@ -23,15 +23,37 @@ $User = Read-Host "Entrez le nom d'utilisateur"
 ############################# CHOIX NUMERO 2 ##########################################################################
 ####################### BRIQUE ACTION ORDINATEUR ####################################################################
 
-  # 1 Fonction pour arrêter le système
+## 1 Fonction pour arrêter le système
+function Arret
+{
+shutdown /s
+}
 
-  # 2 Fonction pour redémarrer
 
-  # 3 Fonction pour verrouiller la session
+## 2 Fonction pour redémarrer
+function Redemarrage
+{
+Restart-Computer
+}
 
-  # 4 Fonction pour mettre à jour le système
 
-  # 5 Fonction pour création de répertoire
+## 3 Fonction pour verrouiller la session
+function Verrou
+{
+Rundll32.exe user32.dll,LockWorkStation
+}
+
+
+## 4 Fonction pour mettre à jour le système
+function MajSystem
+{
+Get-WindowsUpdate
+Install-WindowsUpdate -AcceptAll -AutoReboot
+Write-Host "Système mis à jour !"
+}
+
+
+## 5 Fonction pour création de répertoire
   function create_directory
   {
      $Nomdirectory = Read-Host "Entrez le nom du répertoire à créer"
