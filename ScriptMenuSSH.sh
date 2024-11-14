@@ -429,7 +429,7 @@ echo "Fonction en cours de développement - fonctionnelle sur l'ancien modèle d
 #ip_addr=$(echo "$line" | awk '{print $4}')
 ## Afficher le nom de l'interface et son adresse IP
 #echo "$iface : $ip_addr"
-done
+#done
 }
 
 # 9 Fonction pour l’adresse Mac
