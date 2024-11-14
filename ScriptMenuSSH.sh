@@ -17,6 +17,8 @@ echo -e " _____[___________]_____ "
 echo -e "|      \033[91mcd\033[m[_______] []   |"
 echo -e "|  \033[91mfloppy\033[m[_______] []   |"
 echo -e "|_______________________|"
+echo -e
+echo -e
 
 # Couleur menu
 neutre='\e[0;m'
@@ -45,7 +47,7 @@ read -p "Nom d'utilisateur : " User
 while true; do
 echo -e "\n"$rougefonce"Veuillez séléctionner un numéro de choix :\n\n"$vertfonce"1 - Action sur utilisateur\n2 - Action sur ordinateur client\n3 - Information sur utilisateur\n4 - Information sur ordinateur client\n5 - Information sur script\nX - EXIT"
 echo -e $bleuclair
-read -p "Choix: " choix
+read -p "Choix : " choix
 echo -e $neutre
 
 ####################################################################################
@@ -152,7 +154,7 @@ fi
 while true; do
 echo -e "\n"$rougefonce"Merci de choisir votre action en tapant :\n\n"$vertfonce"1 - Créer un compte utilisateur\n2 - Changer le mot de passe d'un utilisateur\n3 - Supprimer un compte utilisateur\n4 - Désactiver un compte utilisateur\n5 - Ajouter à un groupe d'administrateur\n6 - Ajouter à un groupe local\n7 - Sortie d'un groupe local\nX - EXIT"
 echo -e $bleuclair
-read -p "Choix:" action 
+read -p "Choix : " action 
 echo -e $neutre
 
         case "$action" in
@@ -321,7 +323,7 @@ ssh -t "$User@$IPCible" "sudo apt remove $UninstallPackage"
 while true; do
 echo -e "\n"$rougefone"Merci de choisir votre action en tapant :\n\n"$vertfonce"1 - Arrêter le système\n2 - Redémarrer le système\n3 - Vérrouiller la session\n4 - Mettre à jour le système\n5 - Créer un répertoire\n6 - Modifier un répertoire\n7 - Supprimer un répertoire\n8 - Activer le pare-feu\n9 - Désactiver le pare-feu\n10 - Installation de logiciel\n11 - Désinstallation de logiciel\n12 - Exécution de script sur la machine distante\nX - EXIT"
 echo -e $bleuclair
-read -p "Choix :" action
+read -p "Choix : " action
 echo -e $neutre
 	case "$action" in
                          1) arret ;;
@@ -398,7 +400,7 @@ echo "Commande en cours de développement"
 while true; do
 echo -e "\n"$rougefonce"Veuillez choisir l'information désirée en tapant:\n\n"$vertfonce"1 - Date de dernière connexion d'un utilisateur\n2 - Date de dernière modification du mot de passe\n3 - Liste des sessions ouvertes par l'utilisateur\n4 - Groupe d'appartenance d'un utilisateur\n5 - Historique des commandes exécutées par l'utilisateur\n6 - Droits/Permissions de l'utilisateur sur un dossier ou fichier\nX - EXIT"
 echo -e $bleuclair
-read -p "Choix:" info
+read -p "Choix : " info
 echo -e $neutre
 
 	case "$info" in
