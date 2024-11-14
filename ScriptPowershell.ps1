@@ -3,7 +3,8 @@
 $IPCible = Read-Host "Entrez l'IP cible"
 $User = Read-Host "Entrez le nom d'utilisateur"
 
-
+############################# CHOIX NUMERO 1 #######################################
+####################### BRIQUE ACTION UTILISATEUR ##################################
 
  
   # 1 Fonction pour créer un compte utilisateur
@@ -20,8 +21,8 @@ $User = Read-Host "Entrez le nom d'utilisateur"
 
   # 7 Fonction pour supprimer utilisateur d'un groupe local
 
-############################# CHOIX NUMERO 2 ##########################################################################
-####################### BRIQUE ACTION ORDINATEUR ####################################################################
+############################# CHOIX NUMERO 2 #########################################
+####################### BRIQUE ACTION ORDINATEUR #####################################
 
 ## 1 Fonction pour arrêter le système
 function Arret
@@ -54,42 +55,42 @@ Write-Host "Système mis à jour !"
 
 
 ## 5 Fonction pour création de répertoire
-  function create_directory
-  {
-     $Nomdirectory = Read-Host "Entrez le nom du répertoire à créer"
-     $Chemin = Read-host "Entrez le chemin du répertoire à créer" 
-     $Chemindirectory = "$Chemin\$Nomdirectory"
+function create_directory
+{
+   $Nomdirectory = Read-Host "Entrez le nom du répertoire à créer"
+   $Chemin = Read-host "Entrez le chemin du répertoire à créer" 
+   $Chemindirectory = "$Chemin\$Nomdirectory"
    
-         if (Test-Path -Path $Chemindirectory) 
-         {
-         Write-Output "Le répertoire existe déjà."
-         } 
-         else 
-         {
-         New-item -ItemType Directory -Name $Nomdirectory -Path $Chemindirectory 
-         Write-Output "Le répertoire '$Nomdirectory' a été créé avec succès."
-         }
+       if (Test-Path -Path $Chemindirectory) 
+       {
+       Write-Output "Le répertoire existe déjà."
+       } 
+       else 
+       {
+       New-item -ItemType Directory -Name $Nomdirectory -Path $Chemindirectory 
+       Write-Output "Le répertoire '$Nomdirectory' a été créé avec succès."
+       }
  
 }
 
-  # 6 Fonction pour modification de répertoire
+## 6 Fonction pour modification de répertoire
 
-  # 7 Fonction pour suppression de répertoire
-  function delete
+## 7 Fonction pour suppression de répertoire
+function delete
 {
-     $Nomdelete = Read-host "Entrez le nom du répertoire à supprimer"
-     $Chemin = Read-host "Entrez le chemin du répertoire à supprimer"
-     $Chemindirectory = "$Chemin\$Nomdelete"
+   $Nomdelete = Read-host "Entrez le nom du répertoire à supprimer"
+   $Chemin = Read-host "Entrez le chemin du répertoire à supprimer"
+   $Chemindirectory = "$Chemin\$Nomdelete"
      
-        if (Test-Path -Path $Chemindirectory)
-        {
-         Remove-item -Path $Chemindirectory -Recurse -Force
-         Write-Output "Le répertoire $Nomdelete a été supprimé avec succès."
-         }
-         else
-         {
-         Write-Output "Le répertoire n'existe pas."
-         }
+      if (Test-Path -Path $Chemindirectory)
+      {
+       Remove-item -Path $Chemindirectory -Recurse -Force
+       Write-Output "Le répertoire $Nomdelete a été supprimé avec succès."
+       }
+       else
+       {
+       Write-Output "Le répertoire n'existe pas."
+       }
                  
 }
 
@@ -105,8 +106,8 @@ Write-Host "Système mis à jour !"
   # 12 Fonction pour désinstaller un logiciel
  
 
-############################# CHOIX NUMERO 3 ##########################################################################
-####################### BRIQUE INFO UTILISATEUR  ####################################################################
+############################# CHOIX NUMERO 3 ############################################
+####################### BRIQUE INFO UTILISATEUR  ########################################
 
 # 1 Fonction pour date de dernière connexion d'un utilisateur
 
@@ -120,53 +121,53 @@ Write-Host "Système mis à jour !"
 
 # 6 Fonction pour droits/permissions de l'utilisateur sur un dossier ou fichier
 
-############################# CHOIX NUMERO 4 ##########################################################################
-######################### BRIQUE INFO ORDINATEUR  ####################################################################
+############################# CHOIX NUMERO 4 #############################################
+######################### BRIQUE INFO ORDINATEUR  ########################################
 
 
 
-# 1 Version de l'OS
+## 1 Version de l'OS
 function versionOs
 {
-   [System.Environment]::OSVersion
+   
 }
 
-# 2 Nombre de disques
+## 2 Nombre de disques
 
-#  Fonction pour les partitions (nombre, nom, FS, taille) par disque
+##  Fonction pour les partitions (nombre, nom, FS, taille) par disque
 
-# 8 Fonction pour espace disque restant par partition/volume
+## 8 Fonction pour espace disque restant par partition/volume
 
-# 9 Fonction pour le nom et espace disque d'un dossier (nom de dossier demandé)
+## 9 Fonction pour le nom et espace disque d'un dossier (nom de dossier demandé)
 
-# 10 Fonction pour la liste des lecteurs montés (disque, CD, etc...)
+## 10 Fonction pour la liste des lecteurs montés (disque, CD, etc...)
 
-# 11 Fonction pour le nombre d'interfaces
+## 11 Fonction pour le nombre d'interfaces
 function Nbinterface
 {
 $nombreInterfaces = (Get-NetAdapter | Measure-Object).Count
 Write-Output "Le nombre d'interfaces réseau est : $nombreInterfaces"
 }
 
-# 12 Fonction pour l’adresse IP de chaque interface
+## 12 Fonction pour l’adresse IP de chaque interface
 function Ipaddress
 {
 Get-NetIPAddress | Select-Object InterfaceAlias, IPAddress
 }
 
-# 13 Fonction pour l’adresse Mac
+## 13 Fonction pour l’adresse Mac
 function Macaddress
 {
 Get-NetAdapter | Select-Object Name, MacAddress
 }
 
-# 14 Fonction pour la liste des ports ouverts
+## 14 Fonction pour la liste des ports ouverts
 function ports_ouverts
 {
   netstat -an | Select-String "LISTEN"
 }
 
-# 15 Fonction pour le statut du pare-feu
+## 15 Fonction pour le statut du pare-feu
 function etat_firewall
 {
   Get-NetFirewallProfile | Select-Object Name, Enabled
@@ -178,7 +179,7 @@ function etat_firewall
 
 # Menu 
 
-# Création d'un compte utilisateur local
+## Création d'un compte utilisateur local
 function Create-LocalUser {
 param (
 [string]$username,
@@ -189,7 +190,7 @@ New-LocalUser -Name $username -Password $securePassword -FullName "$username Use
 Write-Host "Compte utilisateur '$username' créé avec succès."
 }
 
-# Changement de mot de passe d'un compte utilisateur local
+## Changement de mot de passe d'un compte utilisateur local
 function Change-LocalUserPassword {
 param (
 [string]$username,
@@ -200,7 +201,7 @@ Set-LocalUser -Name $username -Password $securePassword
 Write-Host "Mot de passe pour '$username' changé avec succès."
 }
 
-# Suppression d'un compte utilisateur local
+## Suppression d'un compte utilisateur local
 function Remove-LocalUser {
 param (
 [string]$username
@@ -209,7 +210,7 @@ Remove-LocalUser -Name $username
 Write-Host "Compte utilisateur '$username' supprimé avec succès."
 }
 
-# Désactivation d'un compte utilisateur local
+## Désactivation d'un compte utilisateur local
 function Disable-LocalUser {
 param (
 [string]$username
@@ -218,30 +219,30 @@ Disable-LocalUser -Name $username
 Write-Host "Compte utilisateur '$username' désactivé avec succès."
 }
 
-# Créer un utilisateur
+## Créer un utilisateur
 Create-LocalUser -username "utilisateur" -password "1234"
 
-# Changer le mot de passe de l'utilisateur
+## Changer le mot de passe de l'utilisateur
 Change-LocalUserPassword -username "utilisateur" -newPassword "2345"
 
-# Désactiver l'utilisateur
+## Désactiver l'utilisateur
 Disable-LocalUser -username "utilisateur"
 
-# Supprimer l'utilisateur
+## Supprimer l'utilisateur
 Remove-LocalUser -username "utilisateur"
 
 
 —-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-# Obtenir toutes les interfaces réseau
+## Obtenir toutes les interfaces réseau
 $interfaces = Get-NetAdapter
 
-# Compter le nombre d'interfaces
+## Compter le nombre d'interfaces
 $nombreInterfaces = $interfaces.Count
 Write-Host "Nombre d'interfaces : $nombreInterfaces"
 
-# Parcourir chaque interface pour obtenir l'adresse IP et l'adresse MAC
+## Parcourir chaque interface pour obtenir l'adresse IP et l'adresse MAC
 foreach ($interface in $interfaces) {
 # Obtenir l'adresse IP de l'interface
 $ipAddresses = Get-NetIPAddress -InterfaceIndex $interface.InterfaceIndex | Select-Object -ExpandProperty IPAddress
@@ -258,9 +259,9 @@ $ipAddresses = Get-NetIPAddress -InterfaceIndex $interface.InterfaceIndex | Sele
     
     Write-Host "-----------------------------"
 }
-—-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+—-----------------------------------------------------------------------------------------------------------------------------------------------
 
-# Fonction pour ajouter un utilisateur à un groupe d'administration
+## Fonction pour ajouter un utilisateur à un groupe d'administration
 function Ajouter-AuGroupeAdministration {
     param (
         [string]$NomGroupe,
@@ -274,7 +275,7 @@ function Ajouter-AuGroupeAdministration {
     }
 }
 
-# Fonction pour ajouter un utilisateur à un groupe local
+## Fonction pour ajouter un utilisateur à un groupe local
 function Ajouter-AuGroupeLocal {
     param (
         [string]$NomGroupe,
@@ -288,7 +289,7 @@ function Ajouter-AuGroupeLocal {
     }
 }
 
-# Fonction pour retirer un utilisateur d'un groupe local
+## Fonction pour retirer un utilisateur d'un groupe local
 function Retirer-DuGroupeLocal {
     param (
         [string]$NomGroupe,
