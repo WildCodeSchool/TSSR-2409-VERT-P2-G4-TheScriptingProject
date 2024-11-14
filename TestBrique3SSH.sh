@@ -12,15 +12,15 @@ ssh -t "$User@$IPCible" "last -n 1 $user | awk '{print $4, $5, $6, $7}'"
 # 2 Fonction pour date de dernière modification du mot de passe
 function dernier_modif_mdp()
 {
-echo "Date de dernière modification du mot de passe de l'utilisateur $USER :"
-ssh -t "$User@$IPCible" "chage -l $user | grep "Last password change" | awk -F: '{print $2}'"
+echo "Date de dernière modification du mot de passe de l'utilisateur $User :"
+ssh -t "$User@$IPCible" "chage -l $User | grep "Last password change" | awk -F: '{print $2}'"
 }
 
 # 3 Fonction pour liste des sessions ouvertes par l'utilisateur
 function session_open()
 {
-echo "Sessions ouvertes par l'utilisateur $USER :"
-ssh -t "$User@$IPCible" "who | grep $user"
+echo "Sessions ouvertes par l'utilisateur $User :"
+ssh -t "$User@$IPCible" "who | grep $U"
 
 }
 
@@ -28,15 +28,15 @@ ssh -t "$User@$IPCible" "who | grep $user"
 function groupuser()
 {
 read -p "Veuillez entrer le nom de l'utilisateur " user
-echo "L'utilisateur "$user" appartient au(x) groupe(s) suivant(s) : "
-ssh -t "$User@$IPCible" "groups $user"
+echo "L'utilisateur "$User" appartient au(x) groupe(s) suivant(s) : "
+ssh -t "$User@$IPCible" "groups $User"
 }
 
 # 5 Fonction pour historique des commandes exécutées par l'utilisateur
 function historyuser()
 {
 read -p "Veuillez entrer le nom de l'utilisateur " user
-ssh -t "$User@$IPCible" "cat /home/$user/.bash_history"
+ssh -t "$User@$IPCible" "cat /home/$User/.bash_history"
 }
 
 # 6 Fonction pour droits/permissions de l'utilisateur sur un dossier ou fichier
