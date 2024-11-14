@@ -190,9 +190,21 @@ function delete
 
 
 ## 9 Fonction pour activer le pare-feu
+function Activer-PareFeu {
+    Write-Host "Activation du pare-feu Windows..."
+    Set-NetFirewallProfile -All -Enabled True
+    Write-Host "Le pare-feu Windows est maintenant activé."
+}
+
 
 
 ## 10 Fonction pour désactiver le pare-feu
+function Desactiver-PareFeu {
+    Write-Host "Désactivation du pare-feu Windows..."
+    Set-NetFirewallProfile -All -Enabled False
+    Write-Host "Le pare-feu Windows est maintenant désactivé."
+}
+
 
 
 ## 11 Fonction pour installation un logiciel
@@ -395,17 +407,7 @@ $ipAddresses = Get-NetIPAddress -InterfaceIndex $interface.InterfaceIndex | Sele
     
     Write-Host "-----------------------------"
 }
-—-----------------------------------------------------------------------------------------------------------------------------------------------
 
-## Fonction pour ajouter un utilisateur à un groupe d'administration
-
-
-## Fonction pour ajouter un utilisateur à un groupe local
-
-
-## Fonction pour retirer un utilisateur d'un groupe local
-
-—-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Spécifiez le nom d'utilisateur
 $username = "NomUtilisateur"  # Remplacez par le nom d'utilisateur souhaité
@@ -440,19 +442,10 @@ if ($sessions) {
 }
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Script PowerShell pour activer et désactiver le pare-feu Windows
 
-function Activer-PareFeu {
-    Write-Host "Activation du pare-feu Windows..."
-    Set-NetFirewallProfile -All -Enabled True
-    Write-Host "Le pare-feu Windows est maintenant activé."
-}
 
-function Desactiver-PareFeu {
-    Write-Host "Désactivation du pare-feu Windows..."
-    Set-NetFirewallProfile -All -Enabled False
-    Write-Host "Le pare-feu Windows est maintenant désactivé."
-}
+
+
 
 # Menu pour choisir l'action
 Write-Host "Choisissez une option :"
