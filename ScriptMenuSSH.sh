@@ -221,11 +221,11 @@ do
   # Choix pour $install1
 while true
 do
-	echo -e 'Que souhaitez-vous faire ? \nTaper "package" pour renseigner un paquet. \nTaper "search" pour rechercher un paquet.'
+	echo -e 'Que souhaitez-vous faire ? \nTaper "1" pour renseigner un paquet. \nTaper "2" pour rechercher un paquet.'
 	read -p "Choix : " install1
 
 # Vérification entrée $install1
-	if [ "$install1" = "package" ] || [ "$install1" = "search" ];
+	if [ "$install1" -eq "1" ] || [ "$install1" -eq "2" ];
 	then
     	break    
 	else
@@ -234,7 +234,7 @@ do
 done
 
 # Action choix "package"
-if [ "$install1" = "package" ]
+if [ "$install1" -eq "1" ]
 then
 	while true;
 	do
@@ -249,8 +249,8 @@ then
 	done
 fi
 
-# Action choix "search"
-if [ "$install1" = "search" ]
+# Action choix "2"
+if [ "$install1" = "2" ]
 then
 	while true;
 	do
