@@ -518,8 +518,7 @@ ssh -t "$User@$IPCible" "ip link show $interface | awk '/ether/ {print $2}'"
 # 10 Fonction pour la liste des ports ouverts
 function ports_ouverts()
 {
-ssh -t "$User@$IPCible" "sudo -S apt install net-tools >> /dev/null"
-ssh -t "$User@$IPCible" "sudo -S netstat –tulnp"
+ssh -t "$User@$IPCible" "sudo -S netstat -tulnp"
 }
 
 # 11 Fonction pour le statut du pare-feu
