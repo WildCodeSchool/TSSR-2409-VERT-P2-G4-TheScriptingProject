@@ -37,28 +37,28 @@ Pour se faire nous avons choisi de configurer 2 cartes réseaux par machines , l
 
  Pour la machines Ubuntu:
  
- 1 Ouvrir le panneau de configuration interfaces enp0s3
+   - Ouvrir le panneau de configuration interfaces enp0s3
  
- 2 Aller sur IPv4  
+   - Aller sur IPv4  
  
- 3 Cliquer sur "Manual" 
+   - Cliquer sur "Manual" 
  
- 4 Entrer Address 172.16.10.30 / Netmask 255.255.255.0 / Gateway 172.16.10.10 
+   - Entrer Address 172.16.10.30 / Netmask 255.255.255.0 / Gateway 172.16.10.10 
  
- 5 Appliquer  
+   - Appliquer  
  
- 6 Désactiver et réactiver l'interface  
+   - Désactiver et réactiver l'interface  
  
- 7 Vérifier l'adresse IP  
+   - Vérifier l'adresse IP  
  
 
  Pour le serveur Debian:
 
- 1 ouvrir le fichier de configuration des interfaces  
+   - ouvrir le fichier de configuration des interfaces  
  
  ` nano /etc/network/interfaces` 
  
- 2 modifier le fichier : 
+   - modifier le fichier : 
  
  ` iface enp0s3 inet static  
  
@@ -105,8 +105,44 @@ Pour se faire nous avons choisi de configurer 2 cartes réseaux par machines , l
 
 
      
- 
- 
+  ## Mise en place des clés SSH pour windows
+  
+    Générer une paire de clés SSH :
+
+    - Vérifiez que Client OpenSSH est bien installé dans les Paramètres > Applications et fonctionnalités > Fonctionnalités facultatives.  
+    
+    - Ouvrez PowerShell.  
+    
+    - Générez une paire de clés SSH avec la commande ssh-keygen en spécifiant l’algorithme de chiffrement désiré. Par exemple, avec Ed25519 :
+       `ssh-keygen -t ecdsa`
+
+    - Laissez l’emplacement par défaut en appuyant sur Entrée.
+        `Generating public/private ecdsa key pair.`
+        `Enter file in which to save the key 
+        `Entrez une phrase secrète pour protéger votre clé privée :`
+        `Enter passphrase (empty for no passphrase):`
+        `Enter same passphrase again:`
+        
+     - Voilà, votre paire de clés SSH a bien été générée !
+     
+     - La clé SSH se trouvent dans le répertoire ~/.ssh/.
+         `ls ~ .ssh/
+         
+   Étape 1 terminée : votre paire de clés SSH (publique et privée) a bien été créée. Prochaine étape : copier la clé publique sur le serveur distant. 👍
+    
+      Copier la clé publique sur le serveur distant
+Pour établir la connexion SSH par clés SSH, il faut que notre clé publique soit présente dans le fichier ~/.ssh/authorized_keys d’un utilisateur sur le serveur distant.
+
+Pour copier une clé publique sur le compte d’un utilisateur distant, suivez ces instructions :
 
  
-  
+     - Ouvrez PowerShell.
+     
+     - Saisissez la commande suivante :
+        `cat ~/.ssh/id_ecdsa.pub | ssh <username>@<hostname> "cat >> ~/.ssh/authorized_keys"
+Remplacez username par le nom d’utilisateur et hostname par l’adresse IP ou le nom d’hôte du serveur.
+
+     - Entrez le mot de passe de l’utilisateur.
+Voilà, votre clé publique a bien été copiée dans le fichier ~/.ssh/authorized_keys de l’utilisateur sur le serveur distant !
+
+ 
