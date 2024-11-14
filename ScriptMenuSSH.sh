@@ -309,8 +309,9 @@ then
 # 1 Fonction pour date de dernière connexion d'un utilisateur
 function date_derniere_connexion()
 {
-echo "Date de dernière connexion de l'utilisateur $User :"
-ssh -t "$User@$IPCible" "last -n 1 $User | awk '{print $4, $5, $6, $7}'"
+echo "Fonction en cours de développement"
+#echo "Date de dernière connexion de l'utilisateur $User :"
+#ssh -t "$User@$IPCible" "last -n 1 $User | awk '{print $4, $5, $6, $7}'"
 }
 
 
