@@ -513,7 +513,7 @@ ssh -t "$User@$IPCible" "sudo -S netstat –tulnp"
 # 11 Fonction pour le statut du pare-feu
 function status_firewall()
 {
-ssh -t "$User@$IPCible" "systemctl status ufw"
+ssh -t "$User@$IPCible" "sudo -S ufw status"
 }
 
 while true; do
