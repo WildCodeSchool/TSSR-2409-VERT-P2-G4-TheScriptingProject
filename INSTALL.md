@@ -71,6 +71,21 @@ Pour se faire nous avons choisi de configurer 2 cartes réseaux par machines , l
 
 
  ## *Mise en place clé SSH Linux* ##
+  
+  Activation et démarrage du service SSH :
+
+  Installation du service SSH:
+  ` sudo apt install openssh-server `
+
+  Activez SSH pour qu'il démarre automatiquement au démarrage :
+   `sudo systemctl enable ssh`
+   
+  Démarrez le service SSH :
+   `sudo systemctl start ssh `
+   
+ Controler le statut du service :
+   `sudo systemctl status ssh`
+   `sudo systemctl status sshd`
 
  Sur le serveur Linux : Générer une clé SSH :  
  
@@ -86,7 +101,9 @@ Pour se faire nous avons choisi de configurer 2 cartes réseaux par machines , l
     
      ` ssh-copy-id -i ~/.ssh/id_ecdsa.pub client@<ip_client> `  
      
-   - entrer "yes" et entrer le mot de passe du client 
+   - entrer "yes" et entrer le mot de passe du client
+
+
      
  
  
