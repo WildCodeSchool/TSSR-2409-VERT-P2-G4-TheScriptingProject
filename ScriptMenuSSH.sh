@@ -448,7 +448,7 @@ ssh -t "$User@$IPCible" "sudo -S netstat –tulnp"
 # 11 Fonction pour le statut du pare-feu
 function status_firewall()
 {
-ssh -t "$User@$IPCible" "systemctl status firewall"
+ssh -t "$User@$IPCible" "systemctl status ufw"
 }
 
 echo -e "Veuillez choisir l'information désirée en tapant :\n1 - Version de l'OS\n2 - Nombre de disques\n3 - Partitions (nombre, nom, FS, taille) par disque\n4 - Espace disque restant par partition/volume\n5 - Nom et espace disque d'un dossier\n6 - Liste des lecteurs montés\n7 - Nombre d'interfaces\n8 - Adresses IP de chaque interface\n9 - Adresse MAC\n10 - Liste des ports ouverts\n11 - Statut du pare-feu"
