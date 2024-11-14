@@ -122,7 +122,7 @@ read -p "Choix:" action
                  5) addsudogroup ;;
                  6) addlocalgroup ;;
                  7) removelocalgroup ;;
-		 X) exit ;;
+		 X) break ;;
                  *) echo "Option invalide.";;
 	esac
 done
@@ -293,7 +293,7 @@ read -p "Choix:" action
                          9) desactiverufw ;;
                          10) InstallPackage ;;
                          11) uninstall ;;
-			 X) exit ;;
+			 X) break ;;
 			 *) echo "Option invalide.";;
 	esac
  done
@@ -364,7 +364,7 @@ read -p "Choix:" info
                4) groupuser ;;
                5) historyuser ;;
                6) rights ;;
-	       X) exit ;;
+	       X) break ;;
 	       *) echo "Option invalide.";;
 	esac
 done
@@ -485,7 +485,7 @@ read -p "Choix:" info
                9) macaddr  ;;
                10) ports_ouverts ;;  
                11) status_firewall ;;
-	       X) exit ;;
+	       X) break ;;
 	       *) echo "Option invalide.";;
 	esac
 done
