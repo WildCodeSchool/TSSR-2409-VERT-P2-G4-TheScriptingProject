@@ -318,7 +318,7 @@ done
   # 12 Fonction pour désinstaller un logiciel
 function uninstall()
 {
-read -p “Renseigner le nom du paquet à désinstaller : ” UninstallPackage
+read -p "Renseigner le nom du paquet à désinstaller : " UninstallPackage
 ssh -t "$User@$IPCible" "sudo -S apt remove $UninstallPackage"
 }
 
