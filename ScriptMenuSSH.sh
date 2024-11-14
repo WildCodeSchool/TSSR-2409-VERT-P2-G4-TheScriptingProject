@@ -539,14 +539,15 @@ echo -e $neutre
 	esac
 done
 fi
-done
 
-if [ "$choix" -eq 5 ];
+if [ "$choix" -eq 5 ]
 then
 echo "En cours de développement"
 fi
 
-if [ "$choix" > 5 ];
+if [ "$choix" -gt 5 ]
 then
 echo "Choix invalide ! "
 fi
+done
+
