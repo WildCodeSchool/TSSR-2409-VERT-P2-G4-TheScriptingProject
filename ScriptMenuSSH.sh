@@ -82,7 +82,7 @@ echo "Compte utilisateur $username créé."
 function change_password()
 {
 read -p "Entrer le nom d'utilisateur dont vous voulez changer le mot de passe : " username
-ssh -t "$User@$IPCible" "sudo passwd $username"
+ssh -t "$User@$IPCible" "sudo -S passwd $username"
 }
 
 
@@ -92,7 +92,7 @@ ssh -t "$User@$IPCible" "sudo passwd $username"
 function delete_user()
 {
 read -p "Entrez le nom d'utilisateur à supprimer: " username
-ssh -t "$User@$IPCible" "sudo userdel $username"
+ssh -t "$User@$IPCible" "sudo -S userdel $username"
 echo "Compte utilisateur '$username' supprimé"
 }
 
@@ -102,7 +102,7 @@ echo "Compte utilisateur '$username' supprimé"
 function disable_user() 
 {
 read -p "Entrez le nom d'utilisateur à désactiver : " username
-ssh -t "$User@$IPCible" "sudo usermod -L $username"
+ssh -t "$User@$IPCible" "sudo -S usermod -L $username"
 echo "Compte utilisateur '$username' désactivé."
 }
 
@@ -112,7 +112,7 @@ echo "Compte utilisateur '$username' désactivé."
 function addsudogroup()
 {
 read -p "Entrez le nom de l'utilisateur à ajouter au groupe sudo : " nom_utilisateur
-ssh -t "$User@$IPCible" "sudo usermod -aG sudo $nom_utilisateur"
+ssh -t "$User@$IPCible" "sudo -S usermod -aG sudo $nom_utilisateur"
 if [ "$?" = "0" ];
 then
 echo "L'utilisateur $nom_utilisateur a bien été ajouté au groupe d'administration"
@@ -126,7 +126,7 @@ function addlocalgroup()
 {
 read -p "Entrez le nom de l'utilisateur à ajouter : " nom_utilisateur
 read -p "Entrez le nom du groupe local : " nom_groupe
-ssh -t "$User@$IPCible" "sudo usermod -aG $nom_groupe $nom_utilisateur"
+ssh -t "$User@$IPCible" "sudo -S usermod -aG $nom_groupe $nom_utilisateur"
 if [ "$?" = "0" ];
 then
 echo "L'utilisateur $nom_utilisateur a bien été ajouté au groupe $nom_groupe"
@@ -142,7 +142,7 @@ function removelocalgroup()
 {
 read -p "Entrez le nom de l'utilisateur à retirer : " nom_utilisateur
 read -p "Entrez le nom du groupe local : " nom_groupe
-ssh -t "$User@$IPCible" "sudo gpasswd -d $nom_utilisateur $nom_groupe"
+ssh -t "$User@$IPCible" "sudo -S gpasswd -d $nom_utilisateur $nom_groupe"
 if [ "$?" = "0" ];
 then
 echo "L'utilisateur $nom_utilisateur a bien été supprimé du groupe $nom_groupe"
@@ -183,7 +183,7 @@ then
 function arret()
 {
 echo "L'ordinateur va s'arrêter"
-ssh -t "$User@$IPCible" "sudo shutdown now"
+ssh -t "$User@$IPCible" "sudo -S shutdown now"
 }
 
 
