@@ -321,7 +321,7 @@ ssh -t "$User@$IPCible" "sudo apt remove $UninstallPackage"
 
 
 while true; do
-echo -e "\n"$rougefone"Merci de choisir votre action en tapant :\n\n"$vertfonce"1 - Arrêter le système\n2 - Redémarrer le système\n3 - Vérrouiller la session\n4 - Mettre à jour le système\n5 - Créer un répertoire\n6 - Modifier un répertoire\n7 - Supprimer un répertoire\n8 - Activer le pare-feu\n9 - Désactiver le pare-feu\n10 - Installation de logiciel\n11 - Désinstallation de logiciel\n12 - Exécution de script sur la machine distante\nX - EXIT"
+echo -e "\n"$rougefonce"Merci de choisir votre action en tapant :\n\n"$vertfonce"1 - Arrêter le système\n2 - Redémarrer le système\n3 - Vérrouiller la session\n4 - Mettre à jour le système\n5 - Créer un répertoire\n6 - Modifier un répertoire\n7 - Supprimer un répertoire\n8 - Activer le pare-feu\n9 - Désactiver le pare-feu\n10 - Installation de logiciel\n11 - Désinstallation de logiciel\n12 - Exécution de script sur la machine distante\nX - EXIT"
 echo -e $bleuclair
 read -p "Choix : " action
 echo -e $neutre
