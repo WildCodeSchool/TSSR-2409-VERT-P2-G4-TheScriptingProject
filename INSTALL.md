@@ -99,7 +99,7 @@ Pour se faire nous avons choisi de configurer 2 cartes réseaux par machines , l
     
    - Pour ajouter le clé publique sur le client  
     
-     ` ssh-copy-id -i ~/.ssh/id_ecdsa.pub client@<ip_client> `  
+     ` ssh-copy-id -i ~/.ssh/id_ecdsa.pub client@<ip_client> `
      
    - entrer "yes" et entrer le mot de passe du client
 
