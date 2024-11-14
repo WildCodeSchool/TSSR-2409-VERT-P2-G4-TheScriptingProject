@@ -362,8 +362,9 @@ echo "Fonction en cours de développement"
 # 2 Fonction pour date de dernière modification du mot de passe
 function dernier_modif_mdp()
 {
-echo "Date de dernière modification du mot de passe de l'utilisateur $User :"
-ssh -t "$User@$IPCible" "sudo -S chage -l $User | grep 'Last password change' | awk -F: '{print $2}'"
+read -p "Veuillez entrer le nom de l'utilisateur : " usermdp
+echo "Date de dernière modification du mot de passe de l'utilisateur $usermdp :"
+ssh -t "$User@$IPCible" "sudo -S chage -l $usermdp | grep 'Last password change' | awk -F: '{print $2}'"
 }
 
 # 3 Fonction pour liste des sessions ouvertes par l'utilisateur
