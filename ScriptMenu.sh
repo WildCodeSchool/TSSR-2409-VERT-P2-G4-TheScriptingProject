@@ -300,7 +300,42 @@ read -p “Renseigner le nom du paquet à désinstaller : ” UninstallPackage
 sudo apt remove $UninstallPackage
 }
 
+
+
   # 13 Exécution de script sur la machine distante
+function ExecScript
+{
+while true
+do
+	read -p 'Emplacement absolu du script à exécuter, "exit" pour sortir : ' ScriptFolder
+	if  [ -d "$ScriptFolder" ]
+	then
+		while true
+		do
+			ls -l "$ScriptFolder"
+			read -p "Quel script voulez-vous exécuter ? " ScriptName
+			if [ -f "$ScriptFolder/$ScriptName" ]
+			then
+				echo -e "\033[32mLancement du script ...\033[0m"
+				bash "$ScriptFolder/$ScriptName";
+				echo -e "\033[32m... fin du script !\033[0m"
+				break
+			else
+				echo -e "\033[31mCe fichier n'existe pas dans ce dossier ou le champ est vide !\033[0m"
+			fi
+		done
+	elif [ $ScriptFolder = "exit" ]
+	then
+		break
+	else
+		echo -e "\033[31mCe dossier n'existe pas ou le champ est vide !\033[0m"
+	fi
+done
+
+}
+
+
+
 
 
   
