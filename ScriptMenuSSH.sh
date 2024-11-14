@@ -319,9 +319,10 @@ ssh -t "$User@$IPCible" "sudo apt remove $UninstallPackage"
 
 
 while true; do
-echo -e "Merci de choisir votre action en tapant :\n1 - Arrêter le système\n2 - Redémarrer le système\n3 - Vérrouiller la session\n4 - Mettre à jour le système\n5 - Créer un répertoire\n6 - Modifier un répertoire\n7 - Supprimer un répertoire\n8 - Activer le pare-feu\n9 - Désactiver le pare-feu\n10 - Installation de logiciel\n11 - Désinstallation de logiciel\n12 - Exécution de script sur la machine distante\nX - EXIT"
-read -p "Choix:" action
-
+echo -e "\n"$rougefone"Merci de choisir votre action en tapant :\n\n"$vertfonce"1 - Arrêter le système\n2 - Redémarrer le système\n3 - Vérrouiller la session\n4 - Mettre à jour le système\n5 - Créer un répertoire\n6 - Modifier un répertoire\n7 - Supprimer un répertoire\n8 - Activer le pare-feu\n9 - Désactiver le pare-feu\n10 - Installation de logiciel\n11 - Désinstallation de logiciel\n12 - Exécution de script sur la machine distante\nX - EXIT"
+echo -e $bleuclair
+read -p "Choix :" action
+echo -e $neutre
 	case "$action" in
                          1) arret ;;
                          2) redemarrage	;;
@@ -395,8 +396,10 @@ echo "Commande en cours de développement"
 }
 
 while true; do
-echo -e "Veuillez choisir l'information désirée en tapant:\n1 - Date de dernière connexion d'un utilisateur\n2 - Date de dernière modification du mot de passe\n3 - Liste des sessions ouvertes par l'utilisateur\n4 - Groupe d'appartenance d'un utilisateur\n5 - Historique des commandes exécutées par l'utilisateur\n6 - Droits/Permissions de l'utilisateur sur un dossier ou fichier\nX - EXIT"
+echo -e "\n"$rougefonce"Veuillez choisir l'information désirée en tapant:\n\n"$vertfonce"1 - Date de dernière connexion d'un utilisateur\n2 - Date de dernière modification du mot de passe\n3 - Liste des sessions ouvertes par l'utilisateur\n4 - Groupe d'appartenance d'un utilisateur\n5 - Historique des commandes exécutées par l'utilisateur\n6 - Droits/Permissions de l'utilisateur sur un dossier ou fichier\nX - EXIT"
+echo -e $bleuclair
 read -p "Choix:" info
+echo -e $neutre
 
 	case "$info" in
                1) date_derniere_connexion ;;
@@ -512,8 +515,10 @@ ssh -t "$User@$IPCible" "systemctl status ufw"
 }
 
 while true; do
-echo -e "Veuillez choisir l'information désirée en tapant :\n1 - Version de l'OS\n2 - Nombre de disques\n3 - Partitions (nombre, nom, FS, taille) par disque\n4 - Espace disque restant par partition/volume\n5 - Nom et espace disque d'un dossier\n6 - Liste des lecteurs montés\n7 - Nombre d'interfaces\n8 - Adresses IP de chaque interface\n9 - Adresse MAC\n10 - Liste des ports ouverts\n11 - Statut du pare-feu\nX - EXIT"
-read -p "Choix:" info
+echo -e "\n"$rougefonce"Veuillez choisir l'information désirée en tapant :\n\n"$vertfonce"1 - Version de l'OS\n2 - Nombre de disques\n3 - Partitions (nombre, nom, FS, taille) par disque\n4 - Espace disque restant par partition/volume\n5 - Nom et espace disque d'un dossier\n6 - Liste des lecteurs montés\n7 - Nombre d'interfaces\n8 - Adresses IP de chaque interface\n9 - Adresse MAC\n10 - Liste des ports ouverts\n11 - Statut du pare-feu\nX - EXIT"
+echo -e $bleuclair
+read -p "Choix : " info
+echo -e $neutre
 
 	case "$info" in
                1) versionOS ;;
