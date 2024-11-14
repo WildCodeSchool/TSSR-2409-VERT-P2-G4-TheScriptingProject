@@ -305,7 +305,7 @@ then
     	then
         	break
     	else
-        	ssh "$User@$IPCible" "sudo -S apt-cache search -n $search1"
+        	ssh -t "$User@$IPCible" "sudo -S apt-cache search -n $search1"
     	fi
 	done
 fi
