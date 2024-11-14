@@ -107,7 +107,7 @@ Pour se faire nous avons choisi de configurer 2 cartes réseaux par machines , l
      
   ## Mise en place des clés SSH pour windows
   
-    Générer une paire de clés SSH :
+Générer une paire de clés SSH :
 
     - Vérifiez que Client OpenSSH est bien installé dans les Paramètres > Applications et fonctionnalités > Fonctionnalités facultatives.  
     
