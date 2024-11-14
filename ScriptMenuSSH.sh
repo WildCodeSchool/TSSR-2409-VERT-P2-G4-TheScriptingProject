@@ -231,9 +231,10 @@ echo "Le dossier $fichier_a_modifier a été modifié"
   # 7 Fonction pour suppression de répertoire
 function suppression_de_repertoire()
 {
-read -p "Veuillez entrer le nom du répertoire à supprimer : " nom_repertoire_a_supprimer
-ssh -t "$User@$IPCible" "rm -r $nom_repertoire_a_supprimer"
-echo "Le repertoire $nom_repetoire_a_supprimer a été supprimé"
+read -p "Veuillez entrer le nom du répertoire à supprimer : " nom_repertoire
+read -p "Veuillez spécifier le /chemin/absolu/du/repertoire/a/supprimer : " repertoire_a_supprimer
+ssh -t "$User@$IPCible" "rm -r $repertoire_a_supprimer"
+echo "Le répertoire $nom_repetoire a été supprimé"
 }
 
  # 8 Fonction pour prise de main à distance 
