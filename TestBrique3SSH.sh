@@ -4,8 +4,8 @@ then
 # 1 Fonction pour date de dernière connexion d'un utilisateur
 function date_derniere_connexion()
 {
-echo "Date de dernière connexion de l'utilisateur $user :"
-ssh -t "$User@$IPCible" "last -n 1 $user | awk '{print $4, $5, $6, $7}'"
+echo "Date de dernière connexion de l'utilisateur $User :"
+ssh -t "$User@$IPCible" "last -n 1 $User | awk '{print $4, $5, $6, $7}'"
 }
 
 
@@ -28,15 +28,15 @@ ssh -t "$User@$IPCible" "who | grep $U"
 function groupuser()
 {
 read -p "Veuillez entrer le nom de l'utilisateur " user
-echo "L'utilisateur "$User" appartient au(x) groupe(s) suivant(s) : "
-ssh -t "$User@$IPCible" "groups $User"
+echo "L'utilisateur "$user" appartient au(x) groupe(s) suivant(s) : "
+ssh -t "$User@$IPCible" "groups $user"
 }
 
 # 5 Fonction pour historique des commandes exécutées par l'utilisateur
 function historyuser()
 {
 read -p "Veuillez entrer le nom de l'utilisateur " user
-ssh -t "$User@$IPCible" "cat /home/$User/.bash_history"
+ssh -t "$User@$IPCible" "cat /home/$user/.bash_history"
 }
 
 # 6 Fonction pour droits/permissions de l'utilisateur sur un dossier ou fichier
