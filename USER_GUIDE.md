@@ -50,33 +50,31 @@
 
 **25. Historique des commandes exécutées par l'utilisateur**  
 
-**26. Droits/permissions de l'utilisateur sur un dossier**  
+**26. Droits/permissions de l'utilisateur sur un dossier/fichier**   
 
-**27. Droits/permissions de l'utilisateur sur un fichier**  
+**27. Version de l'OS**  
 
-**28. Version de l'OS**  
+**28. Nombre de disques**  
 
-**29. Nombre de disques**  
+**29. Partition (nombre, nom, FS, taille) par disque**  
 
-**30. Partition (nombre, nom, FS, taille) par disque**  
+**30. Espace disque restant par partition/volume**  
 
-**31. Espace disque restant par partition/volume**  
+**31. Nom et espace disque d'un dossier (nom de dossier demandé)**  
 
-**32. Nom et espace disque d'un dossier (nom de dossier demandé)**  
+**32. Liste des lecteurs montés (disque, CD, etc.)**  
 
-**33. Liste des lecteurs montés (disque, CD, etc.)**  
+**33. Nombre d'interface**  
 
-**34. Nombre d'interface**  
+**34. Adresse IP de chaque interface**  
 
-**35. Adresse IP de chaque interface**  
+**35. Adresse Mac**  
 
-**36. Adresse Mac**  
+**36. Liste des ports ouverts**  
 
-**37. Liste des ports ouverts**  
+**37. Statut du pare-feu**  
 
-**38. Statut du pare-feu**  
+**38. Recherche des évenements dans le fichier log_evt.log pour un utilisateur**  
 
-**39. Recherche des évenements dans le fichier log_evt.log pour un utilisateur**  
-
-**40. Recherche des évenements dans le fichier log_evt.log pour un ordinateur**  
+**39. Recherche des évenements dans le fichier log_evt.log pour un ordinateur**  
 
