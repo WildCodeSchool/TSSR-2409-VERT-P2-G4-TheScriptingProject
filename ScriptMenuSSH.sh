@@ -439,7 +439,7 @@ echo "L’adresse MAC de cet ordinateur est : "
 ssh -t "$User@$IPCible" "ip link show $interface | awk '/ether/ {print $2}'"
 }
 
-# 10 Fonction pour la liste des ports ouverts
+# 10 Fonction pour la liste des ports ouverts  - /!\ ATTENTION !! Sur machine distante, installer commande tulnp si nécessaire "sudo apt install net-tools"
 function ports_ouverts()
 {
 ssh -t "$User@$IPCible" "sudo -S netstat –tulnp"
