@@ -105,7 +105,7 @@ Pour se faire nous avons choisi de configurer 2 cartes réseaux par machines , l
 
 
      
-  ## Mise en place des clés SSH pour windows
+  ## *Mise en place des clés SSH pour windows* ##
   
 Générer une paire de clés SSH :
 
