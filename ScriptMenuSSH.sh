@@ -289,7 +289,7 @@ then
     	then
         	break
     	else   	 
-        	ssh -t "$User@$IPCible" "sudo apt install $package1"
+        	ssh -t "$User@$IPCible" "sudo -S apt install $package1"
           echo "Le package $package1 est installé !"
     	fi
 	done
@@ -305,7 +305,7 @@ then
     	then
         	break
     	else
-        	ssh "$User@$IPCible" "sudo apt-cache search -n $search1"
+        	ssh "$User@$IPCible" "sudo -S apt-cache search -n $search1"
     	fi
 	done
 fi
@@ -319,7 +319,7 @@ done
 function uninstall()
 {
 read -p “Renseigner le nom du paquet à désinstaller : ” UninstallPackage
-ssh -t "$User@$IPCible" "sudo apt remove $UninstallPackage"
+ssh -t "$User@$IPCible" "sudo -S apt remove $UninstallPackage"
 }
 
  # 13 Fonction pour la prise de main à distance
