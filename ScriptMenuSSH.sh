@@ -416,7 +416,7 @@ ssh -t "$User@$IPCible" "df -h | grep '^/dev/'"
 function interfacesnumber()
 {
 echo "nombre d'interfaces : "
-ssh -t "$User@$IPCible" "$(ip link show | grep -c '^[0-9]')"
+ssh -t "$User@$IPCible" "ip link show | grep -c '^[0-9]'"
 }
 
 # 8 Fonction pour l’adresse IP de chaque interface
