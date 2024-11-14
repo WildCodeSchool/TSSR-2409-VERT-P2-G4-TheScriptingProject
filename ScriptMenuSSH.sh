@@ -322,8 +322,8 @@ read -p “Renseigner le nom du paquet à désinstaller : ” UninstallPackage
 ssh -t "$User@$IPCible" "sudo -S apt remove $UninstallPackage"
 }
 
- # 13 Fonction pour la prise de main à distance
-function distance()
+ # 13 Fonction pour l'exécution de script à distance
+function scriptdistance()
 {
 echo "Fonction en cours de développement"
 }
@@ -347,7 +347,7 @@ echo -e $neutre
                          10) desactiverufw ;;
                          11) InstallPackage ;;
                          12) uninstall ;;
-			 13) distance ;;
+			 13) scriptdistance ;;
 			 X) break ;;
 			 *) echo "Option invalide.";;
 	esac
