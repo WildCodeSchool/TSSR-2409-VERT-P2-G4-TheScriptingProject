@@ -103,6 +103,7 @@ echo "L'utilisateur $nom_utilisateur n'existe pas"
 fi
 }
 
+while true; do
 echo -e "Merci de choisir votre action en tapant :\n1 - Créer un compte utilisateur\n2 - Changer le mot de passe d'un utilisateur\n3 - Supprimer un compte utilisateur\n4 - Désactiver un groupe utilisateur\n5 - Ajouter à un groupe d'administrateur\n6 - Ajouter à un groupe local\n7 pour Sortie d'un groupe local"
 read -p "Choix:" action 
 
@@ -116,6 +117,7 @@ read -p "Choix:" action
                  7) removelocalgroup ;;
                  *) echo "Option invalide.";;
 	esac
+done
 fi
 
 
