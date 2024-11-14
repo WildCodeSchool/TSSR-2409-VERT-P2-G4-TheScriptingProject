@@ -355,7 +355,7 @@ function date_derniere_connexion()
 {
 echo "Fonction en cours de développement"
 #echo "Date de dernière connexion de l'utilisateur $User :"
-#ssh -t "$User@$IPCible" "last -n 1 $User | awk '{print $4, $5, $6, $7}'"
+#ssh -t "$User@$IPCible" "last -n 1 $User | awk '{print \$4, \$5, \$6, \$7}'"
 }
 
 
