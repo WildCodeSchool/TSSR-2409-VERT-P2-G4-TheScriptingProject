@@ -198,8 +198,9 @@ echo "L'ordinateur va redémarrer"
   # 3 Fonction pour verrouiller la session
 function verrou()
 {
+echo "Fonction en cours de développement"
 ssh -t "$User@$IPCible" "loginctl lock-session"
-echo "La session est verrouillée"
+#echo "La session est verrouillée"
 }
 
   # 4 Fonction pour mettre à jour le système
