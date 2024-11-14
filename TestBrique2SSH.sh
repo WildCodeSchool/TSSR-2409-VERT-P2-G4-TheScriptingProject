@@ -9,7 +9,7 @@ then
 function arret()
 {
 echo "L'ordinateur va s'arrêter"
-ssh $User@$IPCible "sudo shutdown now"
+ssh "$User@$IPCible" "sudo shutdown now"
 }
 
 
@@ -17,21 +17,21 @@ ssh $User@$IPCible "sudo shutdown now"
   # 2 Fonction pour redémarrer
 function redemarrage()
 {
-ssh $User@$IPCible "sudo reboot now"
+ssh "$User@$IPCible" "sudo reboot now"
 echo "L'ordinateur va redémarrer"
 }
 
   # 3 Fonction pour verrouiller la session
 function verrou()
 {
-ssh $User@$IPCible "loginctl lock-session"
+ssh "$User@$IPCible" "loginctl lock-session"
 echo "La session est verrouillée"
 }
 
   # 4 Fonction pour mettre à jour le système
 function maj()
 {
-ssh $User@$IPCible "sudo apt update && sudo apt upgrade -y"
+ssh "$User@$IPCible" "sudo apt update && sudo apt upgrade -y"
 echo "La mise à jour est terminée"
 }
 
@@ -39,7 +39,7 @@ echo "La mise à jour est terminée"
 function creation_de_repertoire()
 {
 read -p "Veuillez entrer le nom du répertoire à créer :" nom_repertoire
-ssh $User@$IPCible "mkdir $nom_repertoire"
+ssh "$User@$IPCible" "mkdir $nom_repertoire"
 echo "Le dossier $nom_repertoire a été créé"
 }
 
@@ -48,7 +48,7 @@ function modification_de_repertoire()
 {
 read -p "Veuillez entrer le nom du fichier à modifier :" fichier_a_modifier
 read -p "Veuillez entrer le nombre pour les modification des droits : " modification_droit
-ssh $User@$IPCible "chmod $modification_droit $fichier_a_modifier"
+ssh "$User@$IPCible" "chmod $modification_droit $fichier_a_modifier"
 echo "Le dossier $fichier_a_modifier a été modifié"
 }
 
@@ -56,7 +56,7 @@ echo "Le dossier $fichier_a_modifier a été modifié"
 function suppression_de_repertoire()
 {
 read -p "Veuillez entrer le nom du répertoire à supprimer : " nom_repertoire_a_supprimer
-ssh $User@$IPCible "rm -r $nom_repertoire_a_supprimer"
+ssh "$User@$IPCible" "rm -r $nom_repertoire_a_supprimer"
 echo "Le repertoire $nom_repetoire_a_supprimer a été supprimé"
 }
 
@@ -69,7 +69,7 @@ echo "En cours de développement"
   # 9 Fonction pour activer le pare-feu
 function activerufw()
 {
-ssh $User@$IPCible "sudo ufw enable && sudo ufw allow 22"
+ssh "$User@$IPCible" "sudo ufw enable && sudo ufw allow 22"
 #sudo ufw allow 22
 echo "Le pare-feu a été activé avec succès"
 }
@@ -77,7 +77,7 @@ echo "Le pare-feu a été activé avec succès"
   # 10 Fonction pour désactiver le pare-feu
 function desactiverufw()
 {
-ssh $User@$IPCible "sudo ufw disable"
+ssh "$User@$IPCible" "sudo ufw disable"
 echo "Le pare-feu a été désactivé avec succès"
 }
 
@@ -112,7 +112,7 @@ then
     	then
         	break
     	else   	 
-        	ssh $User@$IPCible "sudo apt install $package1"
+        	ssh "$User@$IPCible" "sudo apt install $package1"
           echo "Le package $package1 est installé !"
     	fi
 	done
@@ -128,7 +128,7 @@ then
     	then
         	break
     	else
-        	ssh $User@$IPCible "sudo apt-cache search -n $search1"
+        	ssh "$User@$IPCible" "sudo apt-cache search -n $search1"
     	fi
 	done
 fi
@@ -142,7 +142,7 @@ done
 function uninstall()
 {
 read -p “Renseigner le nom du paquet à désinstaller : ” UninstallPackage
-ssh $User@$IPCible "sudo apt remove $UninstallPackage"
+ssh "$User@$IPCible" "sudo apt remove $UninstallPackage"
 }
 
 
