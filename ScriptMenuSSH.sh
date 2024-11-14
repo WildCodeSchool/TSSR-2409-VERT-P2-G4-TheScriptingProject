@@ -213,17 +213,18 @@ echo "La mise à jour est terminée"
   # 5 Fonction pour création de répertoire
 function creation_de_repertoire()
 {
+read -p "Veuillez spécifier le /chemin/absolu pour la création du répertoire : " chemin
 read -p "Veuillez entrer le nom du répertoire à créer : " nom_repertoire
-ssh -t "$User@$IPCible" "mkdir $nom_repertoire"
+ssh -t "$User@$IPCible" "mkdir $chemin/$nom_repertoire"
 echo "Le dossier $nom_repertoire a été créé"
 }
 
   # 6 Fonction pour modification de répertoire
 function modification_de_repertoire()
 {
-read -p "Veuillez entrer le nom du fichier à modifier : " fichier_a_modifier
+read -p "Veuillez entrer le /chemin/absolu/du/dossier/à/modifier : " dossier_a_modifier
 read -p "Veuillez entrer le nombre pour les modification des droits : " modification_droit
-ssh -t "$User@$IPCible" "sudo -S chmod $modification_droit $fichier_a_modifier"
+ssh -t "$User@$IPCible" "sudo -S chmod $modification_droit $dossier_a_modifier"
 echo "Le dossier $fichier_a_modifier a été modifié"
 }
 
