@@ -540,3 +540,13 @@ echo -e $neutre
 done
 fi
 done
+
+if [ "$choix" -eq 5 ];
+then
+echo "En cours de développement"
+fi
+
+if [ "$choix" > 5 ];
+then
+echo "Choix invalide ! "
+fi
