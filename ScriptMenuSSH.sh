@@ -7,7 +7,7 @@ read -p "Nom d'utilisateur : " User
 
 while true; do
 echo -e "Veuillez séléctionner un numéro de choix :\n1 - Action sur utilisateur\n2 - Action sur ordinateur client\n3 - Information sur utilisateur\n4 - Information sur ordinateur client\n5 - Information sur script\nX - EXIT"
-read -p "Choix:" choix
+read -p "Choix: " choix
 
 ####################################################################################
 ################### Réponses du script aux choix possibles ###########################
@@ -293,8 +293,8 @@ read -p "Choix:" action
                          9) desactiverufw ;;
                          10) InstallPackage ;;
                          11) uninstall ;;
-			 *) echo "Option invalide.";;
 			 X) exit ;;
+			 *) echo "Option invalide.";;
 	esac
  done
 fi
@@ -356,16 +356,16 @@ while true; do
 echo -e "Veuillez choisir l'information désirée en tapant:\n1 - Date de dernière connexion d'un utilisateur\n2 - Date de dernière modification du mot de passe\n3 - Liste des sessions ouvertes par l'utilisateur\n4 - Groupe d'appartenance d'un utilisateur\n5 - Historique des commandes exécutées par l'utilisateur\n6 - Droits/Permissions de l'utilisateur sur un dossier ou fichier\nX - EXIT"
 read -p "Choix:" info
 
-case "$info" in
+	case "$info" in
                1) date_derniere_connexion ;;
                2) dernier_modif_mdp ;;
                3) session_open ;;
                4) groupuser ;;
                5) historyuser ;;
                6) rights ;;
-	       *) echo "Option invalide.";;
 	       X) exit ;;
-esac
+	       *) echo "Option invalide.";;
+	esac
 done
 fi
 
@@ -472,7 +472,7 @@ while true; do
 echo -e "Veuillez choisir l'information désirée en tapant :\n1 - Version de l'OS\n2 - Nombre de disques\n3 - Partitions (nombre, nom, FS, taille) par disque\n4 - Espace disque restant par partition/volume\n5 - Nom et espace disque d'un dossier\n6 - Liste des lecteurs montés\n7 - Nombre d'interfaces\n8 - Adresses IP de chaque interface\n9 - Adresse MAC\n10 - Liste des ports ouverts\n11 - Statut du pare-feu\nX - EXIT"
 read -p "Choix:" info
 
-case "$info" in
+	case "$info" in
                1) versionOS ;;
                2) ListDisk  ;;
                3) ListPartition  ;;
@@ -484,9 +484,9 @@ case "$info" in
                9) macaddr  ;;
                10) ports_ouverts ;;  
                11) status_firewall ;;
-	       *) echo "Option invalide.";;
 	       X) exit ;;
-esac
+	       *) echo "Option invalide.";;
+	esac
 done
 fi
 done
