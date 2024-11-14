@@ -387,8 +387,7 @@ ssh -t "$User@$IPCible" "groups $user"
 # 5 Fonction pour historique des commandes exécutées par l'utilisateur
 function historyuser()
 {
-read -p "Veuillez entrer le nom de l'utilisateur : " user
-ssh -t "$User@$IPCible" "cat /home/$user/.bash_history"
+ssh -t "$User@$IPCible" "cat /home/$User/.bash_history"
 }
 
 # 6 Fonction pour droits/permissions de l'utilisateur sur un dossier ou fichier
