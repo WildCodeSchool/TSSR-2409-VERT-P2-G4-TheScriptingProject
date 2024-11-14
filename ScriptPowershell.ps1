@@ -7,21 +7,7 @@ $User = Read-Host "Entrez le nom d'utilisateur"
 
  
   # 1 Fonction pour créer un compte utilisateur
-  function adduser
-  {
-   $adduser = Read-host " Entrez le nom du compte utilisateur à créer:"
-   # if 
-    #  (Get-LocalUser | Where-Object { $_.Name -eq $adduser }) 
-     # {
-      #Write-Output "L'utilisateur '$adduser' existe déjà."
-      #} 
-    #else
-     # {
-      new-localuser -name $adduser -Nopassword
-      Write-output " L'utilisateur $adduser a été créé"
-      #}
- }
- adduser
+  
   # 2 Fonction pour changer  le mot de passe d'un utilisateur
 
   # 3 Fonction pour supprimer un compte utilisateur
