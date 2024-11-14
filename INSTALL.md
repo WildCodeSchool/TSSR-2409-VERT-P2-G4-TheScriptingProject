@@ -117,11 +117,11 @@ Générer une paire de clés SSH :
        `ssh-keygen -t ecdsa`
    
    - Laissez l’emplacement par défaut en appuyant sur Entrée.
-        `Generating public/private ecdsa key pair.`
-        `Enter file in which to save the key 
-        `Entrez une phrase secrète pour protéger votre clé privée :`
-        `Enter passphrase (empty for no passphrase):`
-        `Enter same passphrase again:`
+        `Generating public/private ecdsa key pair.`  
+        `Enter file in which to save the key   
+        `Entrez une phrase secrète pour protéger votre clé privée :`  
+        `Enter passphrase (empty for no passphrase):`  
+        `Enter same passphrase again:`  
         
    - Voilà, votre paire de clés SSH a bien été générée !
 
