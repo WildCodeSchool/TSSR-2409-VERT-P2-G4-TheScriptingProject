@@ -4,12 +4,19 @@
 
 read -p "Adresse IP cible : " IPCible
 read -p "Nom d'utilisateur : " User
-echo -e "Veuillez séléctionner un numéro de choix :\n1 - Action sur utilisateur\n2 - Action sur ordinateur client\n3 - Information sur utilisateur\n4 - Information sur ordinateur client\n5 - Information sur script"
+
+while true; do
+echo -e "Veuillez séléctionner un numéro de choix :\n1 - Action sur utilisateur\n2 - Action sur ordinateur client\n3 - Information sur utilisateur\n4 - Information sur ordinateur client\n5 - Information sur script\nX - EXIT"
 read -p "Choix:" choix
 
 ####################################################################################
 ################### Réponses du script aux choix possibles ###########################
 ####################################################################################
+
+if [ "$choix" = X ]
+then
+exit
+fi
 
 ############################# CHOIX NUMERO 1 #########################################################
 ####################### BRIQUE ACTION UTILISATEUR #####################################################
@@ -270,8 +277,8 @@ ssh -t "$User@$IPCible" "sudo apt remove $UninstallPackage"
 }
 
 
-
-echo -e "Merci de choisir votre action en tapant :\n1 - Arrêter le système\n2 - Redémarrer le système\n3 - Vérrouiller la session\n4 - Mettre à jour le système\n5 - Créer un répertoire\n6 - Modifier un répertoire\n7 - Supprimer un répertoire\n8 - Activer le pare-feu\n9 - Désactiver le pare-feu\n10 - Installation de logiciel\n11 - Désinstallation de logiciel\n12 - Exécution de script sur la machine distante"
+while true; do
+echo -e "Merci de choisir votre action en tapant :\n1 - Arrêter le système\n2 - Redémarrer le système\n3 - Vérrouiller la session\n4 - Mettre à jour le système\n5 - Créer un répertoire\n6 - Modifier un répertoire\n7 - Supprimer un répertoire\n8 - Activer le pare-feu\n9 - Désactiver le pare-feu\n10 - Installation de logiciel\n11 - Désinstallation de logiciel\n12 - Exécution de script sur la machine distante\nX - EXIT"
 read -p "Choix:" action
 
 	case "$action" in
@@ -286,7 +293,10 @@ read -p "Choix:" action
                          9) desactiverufw ;;
                          10) InstallPackage ;;
                          11) uninstall ;;
+			 *) echo "Option invalide.";;
+			 X) exit ;;
 	esac
+ done
 fi
 
 ############################# CHOIX NUMERO 3 ###############################################
@@ -342,7 +352,8 @@ ssh -t "$User@$IPCible" "ls -l $chemin"
 echo "Commande en cours de développement"
 }
 
-echo -e "Veuillez choisir l'information désirée en tapant:\n1 - Date de dernière connexion d'un utilisateur\n2 - Date de dernière modification du mot de passe\n3 - Liste des sessions ouvertes par l'utilisateur\n4 - Groupe d'appartenance d'un utilisateur\n5 - Historique des commandes exécutées par l'utilisateur\n6 - Droits/Permissions de l'utilisateur sur un dossier ou fichier"
+while true; do
+echo -e "Veuillez choisir l'information désirée en tapant:\n1 - Date de dernière connexion d'un utilisateur\n2 - Date de dernière modification du mot de passe\n3 - Liste des sessions ouvertes par l'utilisateur\n4 - Groupe d'appartenance d'un utilisateur\n5 - Historique des commandes exécutées par l'utilisateur\n6 - Droits/Permissions de l'utilisateur sur un dossier ou fichier\nX - EXIT"
 read -p "Choix:" info
 
 case "$info" in
@@ -352,7 +363,10 @@ case "$info" in
                4) groupuser ;;
                5) historyuser ;;
                6) rights ;;
+	       *) echo "Option invalide.";;
+	       X) exit ;;
 esac
+done
 fi
 
 ############################# CHOIX NUMERO 4 #############################################
@@ -454,7 +468,8 @@ function status_firewall()
 ssh -t "$User@$IPCible" "systemctl status ufw"
 }
 
-echo -e "Veuillez choisir l'information désirée en tapant :\n1 - Version de l'OS\n2 - Nombre de disques\n3 - Partitions (nombre, nom, FS, taille) par disque\n4 - Espace disque restant par partition/volume\n5 - Nom et espace disque d'un dossier\n6 - Liste des lecteurs montés\n7 - Nombre d'interfaces\n8 - Adresses IP de chaque interface\n9 - Adresse MAC\n10 - Liste des ports ouverts\n11 - Statut du pare-feu"
+while true; do
+echo -e "Veuillez choisir l'information désirée en tapant :\n1 - Version de l'OS\n2 - Nombre de disques\n3 - Partitions (nombre, nom, FS, taille) par disque\n4 - Espace disque restant par partition/volume\n5 - Nom et espace disque d'un dossier\n6 - Liste des lecteurs montés\n7 - Nombre d'interfaces\n8 - Adresses IP de chaque interface\n9 - Adresse MAC\n10 - Liste des ports ouverts\n11 - Statut du pare-feu\nX - EXIT"
 read -p "Choix:" info
 
 case "$info" in
@@ -469,5 +484,9 @@ case "$info" in
                9) macaddr  ;;
                10) ports_ouverts ;;  
                11) status_firewall ;;
+	       *) echo "Option invalide.";;
+	       X) exit ;;
 esac
+done
 fi
+done
