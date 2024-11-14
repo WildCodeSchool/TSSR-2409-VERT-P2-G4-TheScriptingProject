@@ -208,7 +208,7 @@ echo "Le repertoire $nom_repetoire_a_supprimer a été supprimé"
  # 8 Fonction pour prise de main à distance 
 function Prise_main()
 {
-
+echo "En cours de développement"
 }
 
   # 9 Fonction pour activer le pare-feu
