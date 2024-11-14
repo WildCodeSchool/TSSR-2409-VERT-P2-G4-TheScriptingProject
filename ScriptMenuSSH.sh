@@ -342,7 +342,7 @@ echo -e $neutre
                          5) creation_de_repertoire ;;
                          6) modification_de_repertoire ;;
                          7) suppression_de_repertoire ;;
-			 8) Prise_main
+			 8) Prise_main ;;
                          9) activerufw ;;
                          10) desactiverufw ;;
                          11) InstallPackage ;;
