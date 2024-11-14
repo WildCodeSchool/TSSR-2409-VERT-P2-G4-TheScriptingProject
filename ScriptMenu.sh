@@ -300,9 +300,12 @@ read -p “Renseigner le nom du paquet à désinstaller : ” UninstallPackage
 sudo apt remove $UninstallPackage
 }
 
+  # 13 Exécution de script sur la machine distante
 
 
-echo -e "Merci de choisir votre action en tapant :\n1 - Arrêter le système\n2 - Redémarrer le système\n3 - Vérrouiller la session\n4 - Mettre à jour le système\n5 - Créer un répertoire\n6 - Modifier un répertoire\n7 - Supprimer un répertoire\n8 - Activer le pare-feu\n9 - Désactiver le pare-feu\n10 - Installation de logiciel\n11 - Désinstallation de logiciel\n12 - Exécution de script sur la machine distante"
+  
+
+echo -e "Merci de choisir votre action en tapant :\n1 - Arrêter le système\n2 - Redémarrer le système\n3 - Vérrouiller la session\n4 - Mettre à jour le système\n5 - Créer un répertoire\n6 - Modifier un répertoire\n7 - Supprimer un répertoire\n8 Prise de main à distance\n9 - Activer le pare-feu\n10 - Désactiver le pare-feu\n11 - Installation de logiciel\n12 - Désinstallation de logiciel\n13 - Exécution de script sur la machine distante"
 read -p "Choix:" action
 
 	case "$action" in
@@ -313,11 +316,16 @@ read -p "Choix:" action
                          5) creation_de_repertoire ;;
                          6) modification_de_repertoire ;;
                          7) suppression_de_repertoire ;;
-                         8) activerufw ;;
-                         9) desactiverufw ;;
-                         10) InstallPackage ;;
-                         11) uninstall ;;
+ 			 8) Prise_main ;;
+                         9) activerufw ;;
+                         10) desactiverufw ;;
+                         11) InstallPackage ;;
+                         12) uninstall ;;
+			 13) ExecScript ;;
+ 			 
 	esac
+
+
 EOF
 fi
 
