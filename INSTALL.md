@@ -130,19 +130,20 @@ Générer une paire de clés SSH :
          
    Étape 1 terminée : votre paire de clés SSH (publique et privée) a bien été créée. Prochaine étape : copier la clé publique sur le serveur distant. 👍
     
-      Copier la clé publique sur le serveur distant
+Copier la clé publique sur le serveur distant
+   
 Pour établir la connexion SSH par clés SSH, il faut que notre clé publique soit présente dans le fichier ~/.ssh/authorized_keys d’un utilisateur sur le serveur distant.
 
 Pour copier une clé publique sur le compte d’un utilisateur distant, suivez ces instructions :
 
  
-     - Ouvrez PowerShell.
+   - Ouvrez PowerShell.
      
-     - Saisissez la commande suivante :
+   - Saisissez la commande suivante :
         `cat ~/.ssh/id_ecdsa.pub | ssh <username>@<hostname> "cat >> ~/.ssh/authorized_keys"
 Remplacez username par le nom d’utilisateur et hostname par l’adresse IP ou le nom d’hôte du serveur.
 
-     - Entrez le mot de passe de l’utilisateur.
+   - Entrez le mot de passe de l’utilisateur.
 Voilà, votre clé publique a bien été copiée dans le fichier ~/.ssh/authorized_keys de l’utilisateur sur le serveur distant !
 
  
