@@ -113,13 +113,24 @@ cat Team.txt
 
 ### :runner: :five: Sprint semaine 04 - Répartition des tâches de codages + Rédactions des documents finaux
 #### 1. Sprint backlog
+:arrow_right: Terminer le script Bash  
+:arrow_right: Terminer le script PowerShell  
+:arrow_right: Rédiger les documentations  
+:arrow_right: Nettoyer le GitHub  
 #### 2. Sprint review
- 
+:hammer: Ergonomie du script Bash  
+:fire: Terminer le script Bash  
+:warning: Terminer le script PowerShell (Mise en commun des briques sur GitHub)  
+:warning: Rediger les documentations  
+
+
+
+
 ---
 ### :battery: :five: Etat d'avancement des briques de script
-:x: Non codé  
-:pencil2: En cours de codage  
-:white_check_mark: Codé et intégré au script  
+:x: Non codé [-1]  
+:pencil2: En cours de codage [-0.5]  
+:white_check_mark: Codé et intégré au script [1]  
   
 
 | Type        | Cible             | Tâche                                                                    | Bash | PowerShell |
