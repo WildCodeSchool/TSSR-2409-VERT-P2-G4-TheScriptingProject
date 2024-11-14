@@ -212,7 +212,7 @@ echo "La mise à jour est terminée"
   # 5 Fonction pour création de répertoire
 function creation_de_repertoire()
 {
-read -p "Veuillez entrer le nom du répertoire à créer :" nom_repertoire
+read -p "Veuillez entrer le nom du répertoire à créer : " nom_repertoire
 ssh -t "$User@$IPCible" "mkdir $nom_repertoire"
 echo "Le dossier $nom_repertoire a été créé"
 }
@@ -220,7 +220,7 @@ echo "Le dossier $nom_repertoire a été créé"
   # 6 Fonction pour modification de répertoire
 function modification_de_repertoire()
 {
-read -p "Veuillez entrer le nom du fichier à modifier :" fichier_a_modifier
+read -p "Veuillez entrer le nom du fichier à modifier : " fichier_a_modifier
 read -p "Veuillez entrer le nombre pour les modification des droits : " modification_droit
 ssh -t "$User@$IPCible" "sudo -S chmod $modification_droit $fichier_a_modifier"
 echo "Le dossier $fichier_a_modifier a été modifié"
@@ -354,7 +354,7 @@ then
 function date_derniere_connexion()
 {
 echo "Fonction en cours de développement"
-#echo "Date de dernière connexion de l'utilisateur $User :"
+#echo "Date de dernière connexion de l'utilisateur $User : "
 #ssh -t "$User@$IPCible" "last -n 1 $User | awk '{print \$4, \$5, \$6, \$7}'"
 }
 
@@ -362,23 +362,24 @@ echo "Fonction en cours de développement"
 # 2 Fonction pour date de dernière modification du mot de passe
 function dernier_modif_mdp()
 {
-read -p "Veuillez entrer le nom de l'utilisateur : " usermdp
-echo "Date de dernière modification du mot de passe de l'utilisateur $usermdp :"
-ssh -t "$User@$IPCible" "sudo -S chage -l $usermdp | grep 'Last password change' | awk -F: '{print $2}'"
+read -p "Veuillez entrer le nom de l'utilisateur : " user
+echo "Date de dernière modification du mot de passe de l'utilisateur $user :"
+ssh -t "$User@$IPCible" "sudo -S chage -l $user | grep 'Last password change' | awk -F: '{print $2}'"
 }
 
 # 3 Fonction pour liste des sessions ouvertes par l'utilisateur
 function session_open()
 {
-echo "Sessions ouvertes par l'utilisateur $User :"
-ssh -t "$User@$IPCible" "who | grep $User"
+read -p "Veuillez entrer le nom de l'utilisateur : " user
+echo "Sessions ouvertes par l'utilisateur $user :"
+ssh -t "$User@$IPCible" "who | grep $user"
 
 }
 
 # 4 Fonction pour le groupe d'appartenance d'un utilisateur
 function groupuser()
 {
-read -p "Veuillez entrer le nom de l'utilisateur " user
+read -p "Veuillez entrer le nom de l'utilisateur : " user
 echo "L'utilisateur "$user" appartient au(x) groupe(s) suivant(s) : "
 ssh -t "$User@$IPCible" "groups $user"
 }
@@ -386,7 +387,7 @@ ssh -t "$User@$IPCible" "groups $user"
 # 5 Fonction pour historique des commandes exécutées par l'utilisateur
 function historyuser()
 {
-read -p "Veuillez entrer le nom de l'utilisateur " user
+read -p "Veuillez entrer le nom de l'utilisateur : " user
 ssh -t "$User@$IPCible" "cat /home/$user/.bash_history"
 }
 
