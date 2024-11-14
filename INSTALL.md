@@ -109,23 +109,23 @@ Pour se faire nous avons choisi de configurer 2 cartes réseaux par machines , l
   
 Générer une paire de clés SSH :
 
-    - Vérifiez que Client OpenSSH est bien installé dans les Paramètres > Applications et fonctionnalités > Fonctionnalités facultatives.  
+   - Vérifiez que Client OpenSSH est bien installé dans les Paramètres > Applications et fonctionnalités > Fonctionnalités facultatives.  
     
-    - Ouvrez PowerShell.  
+   - Ouvrez PowerShell.  
     
-    - Générez une paire de clés SSH avec la commande ssh-keygen en spécifiant l’algorithme de chiffrement désiré. Par exemple, avec Ed25519 :
+   - Générez une paire de clés SSH avec la commande ssh-keygen en spécifiant l’algorithme de chiffrement désiré. Par exemple, avec Ed25519 :
        `ssh-keygen -t ecdsa`
-
-    - Laissez l’emplacement par défaut en appuyant sur Entrée.
+   
+   - Laissez l’emplacement par défaut en appuyant sur Entrée.
         `Generating public/private ecdsa key pair.`
         `Enter file in which to save the key 
         `Entrez une phrase secrète pour protéger votre clé privée :`
         `Enter passphrase (empty for no passphrase):`
         `Enter same passphrase again:`
         
-     - Voilà, votre paire de clés SSH a bien été générée !
-     
-     - La clé SSH se trouvent dans le répertoire ~/.ssh/.
+   - Voilà, votre paire de clés SSH a bien été générée !
+
+   - La clé SSH se trouvent dans le répertoire ~/.ssh/.
          `ls ~ .ssh/
          
    Étape 1 terminée : votre paire de clés SSH (publique et privée) a bien été créée. Prochaine étape : copier la clé publique sur le serveur distant. 👍
