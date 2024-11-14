@@ -43,19 +43,8 @@ ssh -t "$User@IPCible" "cat /home/$user/.bash_history"
 function rights()
 {
 read -p "Veuillez spécifier le chemin absolu du dossier ou fichier à vérifier : " chemin
-read -p "Veuillez entrer le nom de l'utilisateur : " user
-
-	if [[ -r "$chemin" ]]; then 
-		echo "L'utilisateur "$user" a la permission de lecture."
-	fi
-
-	if [[ -w "$chemin" ]]; then 
-		echo "L'utilisateur "$user" a la permission d'écriture."
-	fi
-
-	if [[ -x "$chemin" ]]; then 
-		echo "L'utilisateur "$user" a la permission d'exécution."
-	fi
+ssh -t "$User@IPCible" "ls -l $chemin"
+echo "Commande en cours de développement"
 }
 
 echo -e "Veuillez choisir l'information désirée en tapant:\n1 - Date de dernière connexion d'un utilisateur\n2 - Date de dernière modification du mot de passe\n3 - Liste des sessions ouvertes par l'utilisateur\n4 - Groupe d'appartenance d'un utilisateur\n5 - Historique des commandes exécutées par l'utilisateur\n6 - Droits/Permissions de l'utilisateur sur un dossier ou fichier"
@@ -69,5 +58,4 @@ case "$info" in
                5) historyuser ;;
                6) rights ;;
 esac
-EOF
 fi
