@@ -1,25 +1,109 @@
-# Menu du script
+## Menu du script
 
 $IPCible = Read-Host "Entrez l'IP cible"
 $User = Read-Host "Entrez le nom d'utilisateur"
 
 ############################# CHOIX NUMERO 1 #######################################
 ####################### BRIQUE ACTION UTILISATEUR ##################################
-
  
-  # 1 Fonction pour créer un compte utilisateur
+## 1 Fonction pour créer un compte utilisateur
+function Create-LocalUser {
+param (
+[string]$username,
+[string]$password
+)
+$securePassword = ConvertTo-SecureString $password -AsPlainText -Force
+New-LocalUser -Name $username -Password $securePassword -FullName "$username User" -Description "Compte utilisateur créé"
+Write-Host "Compte utilisateur '$username' créé avec succès."
+}
+
+
   
-  # 2 Fonction pour changer  le mot de passe d'un utilisateur
+## 2 Fonction pour changer  le mot de passe d'un utilisateur
+function Change-LocalUserPassword {
+param (
+[string]$username,
+[string]$newPassword
+)
+$securePassword = ConvertTo-SecureString $newPassword -AsPlainText -Force
+Set-LocalUser -Name $username -Password $securePassword
+Write-Host "Mot de passe pour '$username' changé avec succès."
+}
 
-  # 3 Fonction pour supprimer un compte utilisateur
 
-  # 4 Fonction pour désactiver un compte utilisateur
 
-  # 5 Fonction pour ajouter utilisateur à un groupe d'administration
+## 3 Fonction pour supprimer un compte utilisateur
+function Remove-LocalUser {
+param (
+[string]$username
+)
+Remove-LocalUser -Name $username
+Write-Host "Compte utilisateur '$username' supprimé avec succès."
+}
 
-  # 6 Fonction pour ajouter utilisateur à un groupe local
 
-  # 7 Fonction pour supprimer utilisateur d'un groupe local
+
+## 4 Fonction pour désactiver un compte utilisateur
+function Disable-LocalUser {
+param (
+[string]$username
+)
+Disable-LocalUser -Name $username
+Write-Host "Compte utilisateur '$username' désactivé avec succès."
+}
+
+
+
+## 5 Fonction pour ajouter utilisateur à un groupe d'administration
+function Ajouter-AuGroupeAdministration {
+    param (
+        [string]$NomGroupe,
+        [string]$NomUtilisateur
+    )
+    try {
+        Add-LocalGroupMember -Group $NomGroupe -Member $NomUtilisateur
+        Write-Host "L'utilisateur $NomUtilisateur a été ajouté au groupe d'administration $NomGroupe."
+    } catch {
+        Write-Host "Erreur lors de l'ajout de l'utilisateur $NomUtilisateur au groupe $NomGroupe : $_"
+    }
+}
+
+
+
+## 6 Fonction pour ajouter utilisateur à un groupe local
+function Ajouter-AuGroupeLocal {
+    param (
+        [string]$NomGroupe,
+        [string]$NomUtilisateur
+    )
+    try {
+        Add-LocalGroupMember -Group $NomGroupe -Member $NomUtilisateur
+        Write-Host "L'utilisateur $NomUtilisateur a été ajouté au groupe local $NomGroupe."
+    } catch {
+        Write-Host "Erreur lors de l'ajout de l'utilisateur $NomUtilisateur au groupe $NomGroupe : $_"
+    }
+}
+
+
+
+## 7 Fonction pour supprimer utilisateur d'un groupe local
+function Retirer-DuGroupeLocal {
+    param (
+        [string]$NomGroupe,
+        [string]$NomUtilisateur
+    )
+    try {
+        Remove-LocalGroupMember -Group $NomGroupe -Member $NomUtilisateur
+        Write-Host "L'utilisateur $NomUtilisateur a été retiré du groupe local $NomGroupe."
+    } catch {
+        Write-Host "Erreur lors du retrait de l'utilisateur $NomUtilisateur du groupe $NomGroupe : $_"
+    }
+}
+# Ajouter-AuGroupeAdministration -NomGroupe "Administrateurs" -NomUtilisateur "NomUtilisateur"
+# Ajouter-AuGroupeLocal -NomGroupe "Utilisateurs" -NomUtilisateur "NomUtilisateur"
+# Retirer-DuGroupeLocal -NomGroupe "Utilisateurs" -NomUtilisateur "NomUtilisateur"
+
+
 
 ############################# CHOIX NUMERO 2 #########################################
 ####################### BRIQUE ACTION ORDINATEUR #####################################
@@ -31,11 +115,13 @@ shutdown /s
 }
 
 
+
 ## 2 Fonction pour redémarrer
 function Redemarrage
 {
 Restart-Computer
 }
+
 
 
 ## 3 Fonction pour verrouiller la session
@@ -45,6 +131,7 @@ Rundll32.exe user32.dll,LockWorkStation
 }
 
 
+
 ## 4 Fonction pour mettre à jour le système
 function MajSystem
 {
@@ -52,6 +139,7 @@ Get-WindowsUpdate
 Install-WindowsUpdate -AcceptAll -AutoReboot
 Write-Host "Système mis à jour !"
 }
+
 
 
 ## 5 Fonction pour création de répertoire
@@ -73,7 +161,10 @@ function create_directory
  
 }
 
+
+
 ## 6 Fonction pour modification de répertoire
+
 
 ## 7 Fonction pour suppression de répertoire
 function delete
@@ -91,133 +182,178 @@ function delete
        {
        Write-Output "Le répertoire n'existe pas."
        }
-                 
 }
 
+
       
-  # 8 Fonction pour prise de main à distance 
+## 8 Fonction pour prise de main à distance 
 
-  # 9 Fonction pour activer le pare-feu
 
-  # 10 Fonction pour désactiver le pare-feu
+## 9 Fonction pour activer le pare-feu
 
-  # 11 Fonction pour installation un logiciel
 
-  # 12 Fonction pour désinstaller un logiciel
- 
+## 10 Fonction pour désactiver le pare-feu
+
+
+## 11 Fonction pour installation un logiciel
+
+
+## 12 Fonction pour désinstaller un logiciel
+
+
+## 13 Execution de script sur la machine distante
+
 
 ############################# CHOIX NUMERO 3 ############################################
 ####################### BRIQUE INFO UTILISATEUR  ########################################
 
-# 1 Fonction pour date de dernière connexion d'un utilisateur
+## 1 Fonction pour date de dernière connexion d'un utilisateur
 
-# 2 Fonction pour date de dernière modification du mot de passe
 
-# 3 Fonction pour liste des sessions ouvertes par l'utilisateur
+## 2 Fonction pour date de dernière modification du mot de passe
 
-# 4 Fonction pour le groupe d'appartenance d'un utilisateur
 
-# 5 Fonction pour historique des commandes exécutées par l'utilisateur
+## 3 Fonction pour liste des sessions ouvertes par l'utilisateur
 
-# 6 Fonction pour droits/permissions de l'utilisateur sur un dossier ou fichier
+
+## 4 Fonction pour le groupe d'appartenance d'un utilisateur
+
+
+## 5 Fonction pour historique des commandes exécutées par l'utilisateur
+
+
+## 6 Fonction pour droits/permissions de l'utilisateur sur un dossier ou fichier
+
 
 ############################# CHOIX NUMERO 4 #############################################
 ######################### BRIQUE INFO ORDINATEUR  ########################################
 
-
-
 ## 1 Version de l'OS
 function versionOs
 {
-   
+[System.Environment]::OSVersion
 }
 
 ## 2 Nombre de disques
+function NbrDisk
+{
+$NombreDisk = (Get-PhysicalDisk | Measure-Object).Count
 
-##  Fonction pour les partitions (nombre, nom, FS, taille) par disque
+Write-Host "Le nombre de disques est : " $NombreDisk
+}
 
-## 8 Fonction pour espace disque restant par partition/volume
 
-## 9 Fonction pour le nom et espace disque d'un dossier (nom de dossier demandé)
+## 3 Fonction pour les partitions (nombre, nom, FS, taille) par disque
+function SpecsPartition
+{
+Get-Partition | ForEach-Object {
+    # Variable volume de la partition
+    $volume = Get-Volume -Partition $_
+    
+    # Calcul en Go
+    $sizeInGB = [math]::Round($volume.Size / 1GB, 2)
 
-## 10 Fonction pour la liste des lecteurs montés (disque, CD, etc...)
+    # Afficher specs des partitions
+    [PSCustomObject]@{
+        "Disque" = $_.DiskNumber
+        "Partition" = $_.PartitionNumber
+        "Lettre de lecteur" = $volume.DriveLetter
+        "Système de fichier" = $volume.FileSystemType
+        "Taille en Go" = $sizeInGB
+        }
+    }
+}
 
-## 11 Fonction pour le nombre d'interfaces
+
+## 4 Fonction pour espace disque restant par partition/volume
+function FreeSpaceVolume
+{
+Get-Partition | ForEach-Object {
+    # Récupérer le volume de la partition
+    $volume = Get-Volume -Partition $_
+
+    # Calculer en Go
+    $freespace = [math]::Round($volume.SizeRemaining / 1GB, 2)
+
+    # Afficher espace libre des partitions
+    [PSCustomObject]@{
+        "Partition" = $_.PartitionNumber
+        "Système de fichier" = $volume.FileSystemType
+        "Espace libre en Go" = $freespace
+        }
+    }
+}
+
+
+## 5 Fonction pour le nom et espace disque d'un dossier (nom de dossier demandé)
+function SpecsFolder
+{
+# Demander l'emplacement du dossier
+$AbsoluDossier = Read-Host "Entrez l'emplacement du dossier"
+
+# Vérifier si le dossier existe
+while (!(Test-Path "$AbsoluDossier")) {
+    Write-Output "Erreur le dossier n'existe pas !"
+    $AbsoluDossier = Read-Host "Veuillez entrer un chemin valide pour le dossier"
+}
+
+# Taille du dossier spécifié
+$FolderSize = (Get-ChildItem "$AbsoluDossier" -Recurse -Force -ErrorAction SilentlyContinue | Measure-Object -Property Length -Sum).Sum
+
+# Convertir en Go
+$CalculGB = [math]::Round($FolderSize / 1GB, 2)
+
+# Afficher la taille du dossier
+Write-Host "La taille du dossier `"$AbsoluDossier`" est de `"$CalculGB`" Go."
+}
+
+
+## 6 Fonction pour la liste des lecteurs montés (disque, CD, etc...)
+function DriveList
+{
+Get-Volume | Select-Object DriveLetter, Label
+}
+
+
+## 7 Fonction pour le nombre d'interfaces
 function Nbinterface
 {
 $nombreInterfaces = (Get-NetAdapter | Measure-Object).Count
 Write-Output "Le nombre d'interfaces réseau est : $nombreInterfaces"
 }
 
-## 12 Fonction pour l’adresse IP de chaque interface
+
+## 8 Fonction pour l’adresse IP de chaque interface
 function Ipaddress
 {
 Get-NetIPAddress | Select-Object InterfaceAlias, IPAddress
 }
 
-## 13 Fonction pour l’adresse Mac
+
+## 9 Fonction pour l’adresse Mac
 function Macaddress
 {
 Get-NetAdapter | Select-Object Name, MacAddress
 }
 
-## 14 Fonction pour la liste des ports ouverts
+
+## 10 Fonction pour la liste des ports ouverts
 function ports_ouverts
 {
   netstat -an | Select-String "LISTEN"
 }
 
-## 15 Fonction pour le statut du pare-feu
+
+## 11 Fonction pour le statut du pare-feu
 function etat_firewall
 {
   Get-NetFirewallProfile | Select-Object Name, Enabled
 }
            
 
+####|Données en vrac en dessous de cette frontière|#################################################################################################################################################################################################################################################################################
 
 
-
-# Menu 
-
-## Création d'un compte utilisateur local
-function Create-LocalUser {
-param (
-[string]$username,
-[string]$password
-)
-$securePassword = ConvertTo-SecureString $password -AsPlainText -Force
-New-LocalUser -Name $username -Password $securePassword -FullName "$username User" -Description "Compte utilisateur créé"
-Write-Host "Compte utilisateur '$username' créé avec succès."
-}
-
-## Changement de mot de passe d'un compte utilisateur local
-function Change-LocalUserPassword {
-param (
-[string]$username,
-[string]$newPassword
-)
-$securePassword = ConvertTo-SecureString $newPassword -AsPlainText -Force
-Set-LocalUser -Name $username -Password $securePassword
-Write-Host "Mot de passe pour '$username' changé avec succès."
-}
-
-## Suppression d'un compte utilisateur local
-function Remove-LocalUser {
-param (
-[string]$username
-)
-Remove-LocalUser -Name $username
-Write-Host "Compte utilisateur '$username' supprimé avec succès."
-}
-
-## Désactivation d'un compte utilisateur local
-function Disable-LocalUser {
-param (
-[string]$username
-)
-Disable-LocalUser -Name $username
-Write-Host "Compte utilisateur '$username' désactivé avec succès."
-}
 
 ## Créer un utilisateur
 Create-LocalUser -username "utilisateur" -password "1234"
@@ -262,49 +398,12 @@ $ipAddresses = Get-NetIPAddress -InterfaceIndex $interface.InterfaceIndex | Sele
 —-----------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Fonction pour ajouter un utilisateur à un groupe d'administration
-function Ajouter-AuGroupeAdministration {
-    param (
-        [string]$NomGroupe,
-        [string]$NomUtilisateur
-    )
-    try {
-        Add-LocalGroupMember -Group $NomGroupe -Member $NomUtilisateur
-        Write-Host "L'utilisateur $NomUtilisateur a été ajouté au groupe d'administration $NomGroupe."
-    } catch {
-        Write-Host "Erreur lors de l'ajout de l'utilisateur $NomUtilisateur au groupe $NomGroupe : $_"
-    }
-}
+
 
 ## Fonction pour ajouter un utilisateur à un groupe local
-function Ajouter-AuGroupeLocal {
-    param (
-        [string]$NomGroupe,
-        [string]$NomUtilisateur
-    )
-    try {
-        Add-LocalGroupMember -Group $NomGroupe -Member $NomUtilisateur
-        Write-Host "L'utilisateur $NomUtilisateur a été ajouté au groupe local $NomGroupe."
-    } catch {
-        Write-Host "Erreur lors de l'ajout de l'utilisateur $NomUtilisateur au groupe $NomGroupe : $_"
-    }
-}
+
 
 ## Fonction pour retirer un utilisateur d'un groupe local
-function Retirer-DuGroupeLocal {
-    param (
-        [string]$NomGroupe,
-        [string]$NomUtilisateur
-    )
-    try {
-        Remove-LocalGroupMember -Group $NomGroupe -Member $NomUtilisateur
-        Write-Host "L'utilisateur $NomUtilisateur a été retiré du groupe local $NomGroupe."
-    } catch {
-        Write-Host "Erreur lors du retrait de l'utilisateur $NomUtilisateur du groupe $NomGroupe : $_"
-    }
-}
-# Ajouter-AuGroupeAdministration -NomGroupe "Administrateurs" -NomUtilisateur "NomUtilisateur"
-# Ajouter-AuGroupeLocal -NomGroupe "Utilisateurs" -NomUtilisateur "NomUtilisateur"
-# Retirer-DuGroupeLocal -NomGroupe "Utilisateurs" -NomUtilisateur "NomUtilisateur"
 
 —-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
