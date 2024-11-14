@@ -124,13 +124,13 @@ cat Team.txt
 
 | Type        | Cible             | Tâche                                                                    | Bash | PowerShell |
 |-------------|-------------------|--------------------------------------------------------------------------|------|------------|
-| Action      | Utilisateur       | Création de compte utilisateur local                                     |:white_check_mark:|:x:|
-| Action      | Utilisateur       | Changement de mot de passe                                               |:white_check_mark:|:x:|
-| Action      | Utilisateur       | Suppression de compte utilisateur local                                  |:white_check_mark:|:x:|
-| Action      | Utilisateur       | Désactivation de compte utilisateur local                                |:white_check_mark:|:x:|
-| Action      | Utilisateur       | Ajout à un groupe d'administration                                       |:white_check_mark:|:x:|
-| Action      | Utilisateur       | Ajout à un groupe local                                                  |:white_check_mark:|:x:|
-| Action      | Utilisateur       | Sortie d’un groupe local                                                 |:white_check_mark:|:x:|
+| Action      | Utilisateur       | Création de compte utilisateur local                                     |:white_check_mark:|:pencil2:|
+| Action      | Utilisateur       | Changement de mot de passe                                               |:white_check_mark:|:pencil2:|
+| Action      | Utilisateur       | Suppression de compte utilisateur local                                  |:white_check_mark:|:pencil2:|
+| Action      | Utilisateur       | Désactivation de compte utilisateur local                                |:white_check_mark:|:pencil2:|
+| Action      | Utilisateur       | Ajout à un groupe d'administration                                       |:white_check_mark:|:pencil2:|
+| Action      | Utilisateur       | Ajout à un groupe local                                                  |:white_check_mark:|:pencil2:|
+| Action      | Utilisateur       | Sortie d’un groupe local                                                 |:white_check_mark:|:pencil2:|
 | Action      | Ordinateur client | Arrêt                                                                    |:white_check_mark:|:pencil2:|
 | Action      | Ordinateur client | Redémarrage                                                              |:white_check_mark:|:pencil2:|
 | Action      | Ordinateur client | Verrouillage                                                             |:white_check_mark:|:pencil2:|
@@ -145,8 +145,8 @@ cat Team.txt
 | Action      | Ordinateur client | Désinstallation de logiciel                                              |:white_check_mark:|:x:|
 | Action      | Ordinateur client | Exécution de script sur la machine distante                              |:white_check_mark:|:x:|
 | Information | Utilisateur       | Date de dernière connexion d’un utilisateur                              |:white_check_mark:|:x:|
-| Information | Utilisateur       | Date de dernière modification du mot de passe                            |:white_check_mark:|:x:|
-| Information | Utilisateur       | Liste des sessions ouvertes par l'utilisateur                            |:white_check_mark:|:x:|
+| Information | Utilisateur       | Date de dernière modification du mot de passe                            |:white_check_mark:|:pencil2:|
+| Information | Utilisateur       | Liste des sessions ouvertes par l'utilisateur                            |:white_check_mark:|:pencil2:|
 | Information | Utilisateur       | Groupe d’appartenance d’un utilisateur                                   |:white_check_mark:|:x:|
 | Information | Utilisateur       | Historique des commandes exécutées par l'utilisateur                     |:white_check_mark:|:x:|
 | Information | Utilisateur       | Droits/permissions de l’utilisateur sur un dossier                       |:white_check_mark:|:x:|
