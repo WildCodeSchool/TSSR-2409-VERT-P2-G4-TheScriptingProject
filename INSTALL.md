@@ -113,7 +113,7 @@ Générer une paire de clés SSH :
     
    - Ouvrez PowerShell.  
     
-   - Générez une paire de clés SSH avec la commande ssh-keygen en spécifiant l’algorithme de chiffrement désiré. Par exemple, avec Ed25519 :
+   - Générez une paire de clés SSH avec la commande ssh-keygen en spécifiant l’algorithme de chiffrement désiré.
        `ssh-keygen -t ecdsa`
    
    - Laissez l’emplacement par défaut en appuyant sur Entrée.
