@@ -79,7 +79,7 @@
 
 
 **11. Installation de logiciel**  
-![18 Installation de logiciel](https://github.com/user-attachments/assets/d75b786e-9043-477b-840a-c0b3e181f31f)
+![18 Installation de logiciel](https://github.com/user-attachments/assets/b54aadef-7be7-4757-b576-2b9f69d78bf7)
 
 ![18 1 Installation de logiciel](https://github.com/user-attachments/assets/5952aa6f-09c4-4935-905d-421350b0542d)
 
