@@ -7,7 +7,7 @@ Au lancement de script, deux prompts s'affichent à votre écran. L'un vous invi
 ![0 DemarrageScript](https://github.com/user-attachments/assets/160089dc-e524-4cff-b319-927e0de303c5)  
 
 
-### 🔱 I - Brique Action - Utilisateur  
+### 🛠️👨‍🦲 I - Brique Action - Utilisateur  
 Si votre besoin est d'effectuer une action sur un utilisateur, vous devrez choisir, dans le menu principal, l'option "1 - Action sur utilisateur".  
 Le menu suivant s'affichera sur votre écran :  
 
@@ -48,7 +48,7 @@ Pour supprimer un utilisateur d'un groupe local, entrez 7. Deux prompts s'affich
 ![7 Retirer groupe local](https://github.com/user-attachments/assets/0185ad5e-fff2-4069-b62d-001be6e0a687)
 
 
-### 🔱 II - Brique Action - Ordinateur Client  
+### 🛠️🖥️ II - Brique Action - Ordinateur Client  
 Si votre besoin est d'effectuer une action sur un ordinateur client, vous devrez choisir, dans le menu principal, l'option "2 - Action sur ordinateur client".  
 Le menu suivant s'affichera sur votre écran :  
 
@@ -128,7 +128,7 @@ La fonctionnalité permettant l'exécution de script sur machine distante est en
 ![20 Execution de script sur la machine distante](https://github.com/user-attachments/assets/a8689872-9686-4e4c-8b77-217e25e64f80)
 
 
-### 🔱 III - Brique Information - Utilisateur  
+### ❓👨‍🦲 III - Brique Information - Utilisateur  
 Si votre besoin est d'obtenir une information sur un utilisateur, vous devrez choisir, dans le menu principal, l'option "3 - Information sur utilisateur".  
 Le menu suivant s'affichera sur votre écran :  
 ![III Information utilisateur](https://github.com/user-attachments/assets/116335c3-deb3-49c5-8c16-f0cf480645c5)  
@@ -165,7 +165,7 @@ Il est impératif d'entrer le chemin en partant de la racine, par exemple /home/
 ![26 Droits permissions de lutilisateur sur un dossier fichier](https://github.com/user-attachments/assets/09c5ee4e-2ee0-4e46-9d1c-1c3b69b975f0)  
 
 
-### ℹ️🖥️ IV - Brique Information - Ordinateur Client  
+### ❓🖥️ IV - Brique Information - Ordinateur Client  
 Si votre besoin est d'obtenir une information sur un ordinateur client, vous devrez choisir, dans le menu principal, l'option "4 - Information sur ordinateur client".  
 Le menu suivant s'affichera sur votre écran :  
 ![IV Info Ordinateur](https://github.com/user-attachments/assets/300a925b-98ea-407d-b26c-839a9685321b)
@@ -215,11 +215,11 @@ Le menu suivant s'affichera sur votre écran :
 ![37 Statut du pare feu](https://github.com/user-attachments/assets/9be92e47-5d73-4da5-a4ec-0204d30a7049)
 
 
-### 🗒️ V - Brique Information sur script  
+### ❓📖 V - Brique Information sur script  
 ![V Info sur script](https://github.com/user-attachments/assets/b0fe1154-f680-4c19-b51e-a40af59a4490)
 
 
-**1. Recherche des évenements dans le fichier log_evt.log pour un utilisateur**  
+**:one: Recherche des évenements dans le fichier log_evt.log pour un utilisateur**  
 
-**2. Recherche des évenements dans le fichier log_evt.log pour un ordinateur**  
+**:two: Recherche des évenements dans le fichier log_evt.log pour un ordinateur**  
 
