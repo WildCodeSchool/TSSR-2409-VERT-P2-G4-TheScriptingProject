@@ -228,7 +228,7 @@ Pour obtenir le statut du pare-feu, entrez 11.
 
 
 ### ❓📖 V - Brique Information sur script  
-Si votre besoin est d'obtenir une information sur un utilisateur, vous devrez choisir, dans le menu principal, l'option "5 - Information sur script".  
+Si votre besoin est d'obtenir une information sur un script, vous devrez choisir, dans le menu principal, l'option "5 - Information sur script".  
 Cette partie du menu principal est en cours de développement.  
 ![V Info sur script](https://github.com/user-attachments/assets/b0fe1154-f680-4c19-b51e-a40af59a4490)
 
