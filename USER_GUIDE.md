@@ -18,32 +18,32 @@ Pour créer un utilisateur, entrez 1. Un prompt s'affiche, demandant le nom du n
 ![1 Creation utilisateur](https://github.com/user-attachments/assets/e6de76ab-7f95-465e-acd7-d92986d48d97)  
 
 
-**2. Changement de mot de passe**  
+**:two: Changement de mot de passe**  
 Pour changer le mot de passe d'un utilisateur, entrez 2. Un prompt s'affiche, demandant le nom de l'utilisateur pour lequel vous voulez modifier le mot de passe.  
 ![2 Changer mot de passe](https://github.com/user-attachments/assets/553845fc-b84e-421e-8012-50fed77deead)  
 
 
-**3. Suppression de compte utilisateur local**  
+**:three: Suppression de compte utilisateur local**  
 Pour supprimer un utilisateur, entrez 3. Un prompt s'affiche, demandant le nom de l'utilisateur que vous souhaitez supprimer.  
 ![3 Supprimer utilisateur](https://github.com/user-attachments/assets/e534771b-b05b-4588-b76f-57f51d23750f)  
 
 
-**4. Désactivation de compte utilisateur local**  
+**4️⃣ Désactivation de compte utilisateur local**  
 Pour désactiver un utilisateur, entrez 4. Un prompt s'affiche, demandant le nom de l'utilisateur à désactiver.  
 ![4 Desactiver utilisateur](https://github.com/user-attachments/assets/f7143b27-eb69-4731-9b7b-fdffce3e729d)  
 
 
-**5. Ajout à un groupe d'administration**  
+**:five: Ajout à un groupe d'administration**  
 Pour ajouter un utilisateur à un groupe d'administration (sudo), entrez 5. Un prompt s'affiche, demandant le nom de l'utilisateur à ajouter au groupe sudo.  
 ![5 Ajout a un groupe admin](https://github.com/user-attachments/assets/58bda05c-76bc-4937-aa90-b7745e3c50ec)  
 
 
-**6. Ajout à un groupe local**  
+**six: Ajout à un groupe local**  
 Pour ajouter un utilisateur à un groupe loca, entrez 6. Un prompt s'affiche, demandant le nom de l'utilisateur à ajouter au groupe local.  
 ![6 Ajout groupe local](https://github.com/user-attachments/assets/6d123f95-a0a3-45f1-9e18-fb6feab547da)
 
 
-**7. Sortie d'un groupe local**  
+**:seven: Sortie d'un groupe local**  
 Pour supprimer un utilisateur d'un groupe local, entrez 7. Deux prompts s'affichent. L'un demande le nom de l'utilisateur à supprimer du groupe, l'autre demande le nom du groupe local.  
 ![7 Retirer groupe local](https://github.com/user-attachments/assets/0185ad5e-fff2-4069-b62d-001be6e0a687)
 
@@ -54,27 +54,27 @@ Le menu suivant s'affichera sur votre écran :
 
 ![II Action Ordinateur](https://github.com/user-attachments/assets/848175ef-e8d2-471c-8e47-831518910054)
 
-**1. Arrêt**  
+**:one: Arrêt**  
 Pour arrêter l'ordinateur, entrez 1.  
 ![8 Arret](https://github.com/user-attachments/assets/c32fbf27-ad9a-486a-ae8a-a43eb7fd9b4b)
 
 
-**2. Redémarrage**  
+**:two: Redémarrage**  
 Pour redémarrer l'ordinateur, entrez 2.  
 ![9 Redemarrage](https://github.com/user-attachments/assets/44742292-0838-4a9c-8d9f-980b36accea2)
 
 
-**3. Verrouillage**  
+**:three: Verrouillage**  
 La fonctionnalité permettant le verrouillage d'une session est en cours de développement.  
 ![10 Verrouillage](https://github.com/user-attachments/assets/383540a1-e1f8-4729-a05f-eb050f688cd4)
 
 
-**4. Mise à jour du système**  
+**:four: Mise à jour du système**  
 Pour mettre à jour le système, entrez 4.  
 ![11 Mise a jour](https://github.com/user-attachments/assets/a67b7645-7205-4401-a9a5-feb9cc16dd53)  
 
 
-**5. Création de répertoire**  
+**:five: Création de répertoire**  
 Pour créer un répertoire, entrez 5. Un prompt s'affiche, demandant le chemin absolu pour la création du répertoire.  
 Il est primordial d'entrer le chemin absolu en partant de la racine, par exemple : /home/utilisateur/Documents.  
 Avec ce chemin, le nouveau répertoire sera crée dans le dossier Documents se trouvant dans l'espace personnel de l'utilisateur.  
@@ -82,29 +82,29 @@ Un deuxième prompt s'affiche, demandant le nom du dossier à créer.
 ![12 Creation de repertoire](https://github.com/user-attachments/assets/d2e58a85-8141-4930-90f3-8b75beb2e787)  
 
 
-**6. Modification de répertoire**  
+**:six: Modification de répertoire**  
 Pour modifier les droits sur un répertoire, entrez 6. Un prompt s'affiche, demandant le chemin absolu du répertoire à modifier.  
 Un deuxième prompt s'affiche, demandant d'entrer le code pour les modifications des droits (exemple 745).  
 ![13 Modification repertoire](https://github.com/user-attachments/assets/7dc78517-a626-4805-bc19-bdc5a1b757bc)
 
 
-**7. Supppression de répertoire**  
+**:seven: Supppression de répertoire**  
 Pour supprimer un répertoire, entrez 7. Un prompt s'affiche, demandant le nom du répertoire à supprimer.  
 Un deuxième prompt s'affiche, demandant de spécifier le chemin absolu du répertoire à supprimer.  
 ![14 Suppression de répertoire](https://github.com/user-attachments/assets/af96aa26-b571-47bc-9d02-18d1c0af7cea)  
 
 
-**8. Prise de main à distance (GUI)**  
+**:eight: Prise de main à distance (GUI)**  
 La fonctionnalité permettant le prise de main à distance est en cours de développement.  
 ![15 Prise de main a distance](https://github.com/user-attachments/assets/1d5cbdf8-c634-4e86-b7a7-612e43f40f78)  
 
 
-**9. Activation du pare-feu**  
+**:nine: Activation du pare-feu**  
 Pour activer le pare-feu, entrez 9.  
 ![16 Activer ufw](https://github.com/user-attachments/assets/39080faa-6bff-4c7d-8c2c-020939ade57f)  
 
 
-**10. Désactivation du pare-feu**  
+**:ten: Désactivation du pare-feu**  
 Pour désactiver le pare-feu, entrez 10.  
 ![17 Desactiver ufw](https://github.com/user-attachments/assets/5a97dd5a-37ab-4360-ab65-e7788abaee9d)
 
