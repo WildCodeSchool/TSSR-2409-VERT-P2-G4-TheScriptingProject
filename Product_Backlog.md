@@ -177,4 +177,4 @@ cat Team.txt
 | Information | Script            | Recherche des evenements dans le fichier log_evt.log pour un ordinateur  |:pencil2:|:x:|
 | Général     | Script            | Compilation générale du script                                           |:white_check_mark:|:x:|
 | Général     | Script            | Mise en forme et présentation des menus                                  |:white_check_mark:|:x:|
-| Général     | Script            | Etat d'avancement en pourcentage                                         |**93%**|**31%**|
+| Général     | Script            | Etat d'avancement en pourcentage                                         |**90.5%**|**31%**|
