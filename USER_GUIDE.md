@@ -172,54 +172,70 @@ Le menu suivant s'affichera sur votre écran :
 
 
 **:one: Version de l'OS**  
+Pour obtenir la version de l'OS installée sur la machine, entrez 1.  
 ![27 Version OS](https://github.com/user-attachments/assets/ee347751-881d-4597-ae80-f71cfe493772)
 
 
 **:two: Nombre de disques**  
+Pour obtenir le nombre de disques, entrez 2.  
 ![28 Nombre de disques](https://github.com/user-attachments/assets/2cc8eff3-bef7-4079-84c2-2c437ce79181)
 
 
 **:three: Partition (nombre, nom, FS, taille) par disque**  
+Pour obtenir les partitions (leur nombre, leur(s) nom(s), leur taille), entrez 3.  
 ![29 Partitions](https://github.com/user-attachments/assets/9e7d1ab4-cc4c-4a76-bc2e-c057a5c93437)
 
 
 **:four: Espace disque restant par partition/volume**  
+Pour obtenir l'espace disque restant par partition, entrez 4.  
 ![30 Espace disque restant](https://github.com/user-attachments/assets/6ba0ed86-af24-4399-9102-d58d6dca3f43)
 
 
 **:five: Nom et espace disque d'un dossier (nom de dossier demandé)**  
-![31 Nom et espace disque d'un dossier](https://github.com/user-attachments/assets/0e9a4423-e12c-4b64-adb1-315539058e6c)
+La fonctionnalité permettant d'obtenir le nom et l'espace disque d'un dossier est en cours de développement.  
+![31 Nom et espace disque d'un dossier](https://github.com/user-attachments/assets/0e9a4423-e12c-4b64-adb1-315539058e6c)  
 
 
 **:six: Liste des lecteurs montés (disque, CD, etc.)**  
+Pour obtenir la liste des lecteurs montés, entrez 6.  
 ![32 Liste des lecteurs montés](https://github.com/user-attachments/assets/a03855ad-1fb8-468a-9f23-efeb4668209d)
 
 
 **:seven: Nombre d'interface**  
+Pour obtenir le nombre d'interfaces, tapez 7.  
 ![33 Nombre d'interfaces](https://github.com/user-attachments/assets/175af92a-5b41-422e-96c9-2f7c6ae70f90)
 
 
 **:eight: Adresse IP de chaque interface**  
+La fonctionnalité permettant d'obtenir l'adresse IP de chaque interface est en cours de développement.  
+Elle est pour le moment seulement disponible dans son ancienne version, en envoyant un script sur la machine distante.  
 ![34 Adresse IP chaque interface](https://github.com/user-attachments/assets/29b5ce29-8fdc-45f6-b847-f66fb4d572ad)
 
 
-**:nine: Adresse Mac**  
+**:nine: Adresse MAC**  
+Pour obtenir l'adresse MAC, entrez 9.  
 ![35 Adresse mac](https://github.com/user-attachments/assets/cddc8e19-3e5d-446d-945e-0a7397ef14f2)
 
 
 **:one::zero: Liste des ports ouverts**  
+Pour obtenir la liste des ports ouverts, entrez 10.  
 ![36 Liste des ports ouverts](https://github.com/user-attachments/assets/5ef542e3-51a5-4b33-8820-24ae82a9b1e2)
 
 
 **:one::one: Statut du pare-feu**  
+Pour obtenir le statut du pare-feu, entrez 11.  
 ![37 Statut du pare feu](https://github.com/user-attachments/assets/9be92e47-5d73-4da5-a4ec-0204d30a7049)
 
 
 ### ❓📖 V - Brique Information sur script  
+Si votre besoin est d'obtenir une information sur un utilisateur, vous devrez choisir, dans le menu principal, l'option "5 - Information sur script".  
+Cette partie du menu principal est en cours de développement.  
 ![V Info sur script](https://github.com/user-attachments/assets/b0fe1154-f680-4c19-b51e-a40af59a4490)
 
 
 **:one: Recherche des évenements dans le fichier log_evt.log pour un utilisateur**  
+En cours de développement.  
 
 **:two: Recherche des évenements dans le fichier log_evt.log pour un ordinateur**  
+En cours de développement.  
 
