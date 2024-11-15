@@ -15,14 +15,16 @@ Le menu suivant s'affichera sur votre écran :
 
 **1. Création de compte utilisateur local**  
 Pour créer un utilisateur, entrez 1. Un prompt s'affiche, demandant le nom du nouvel utilisateur que vous souhaitez créer.
-![1 Creation utilisateur](https://github.com/user-attachments/assets/69a121eb-063e-43fe-a197-449fec62ae27)
+![1 Creation utilisateur](https://github.com/user-attachments/assets/e6de76ab-7f95-465e-acd7-d92986d48d97)
 
 
 **2. Changement de mot de passe**  
+Pour changer le mot de passe d'un utilisateur, entrez 2. Un prompt s'affiche, demandant le nom de l'utilisateur pour lequel vous voulez modifier le mot de passe.
 ![2 Changer mot de passe](https://github.com/user-attachments/assets/553845fc-b84e-421e-8012-50fed77deead)
 
 
 **3. Suppression de compte utilisateur local**  
+Pour supprimer un utilisateur, entrez 3. Un prompt s'affiche, demandant le nom de l'utilisateur que vous souhaitez supprimer.
 ![3 Supprimer utilisateur](https://github.com/user-attachments/assets/09163414-357f-4005-93e6-0a41b157e9b0)
 
 
