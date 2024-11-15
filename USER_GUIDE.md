@@ -104,7 +104,7 @@ Pour activer le pare-feu, entrez 9.
 ![16 Activer ufw](https://github.com/user-attachments/assets/39080faa-6bff-4c7d-8c2c-020939ade57f)  
 
 
-**:ten: Désactivation du pare-feu**  
+**:one::zero: Désactivation du pare-feu**  
 Pour désactiver le pare-feu, entrez 10.  
 ![17 Desactiver ufw](https://github.com/user-attachments/assets/5a97dd5a-37ab-4360-ab65-e7788abaee9d)
 
