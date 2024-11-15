@@ -232,7 +232,7 @@ echo "Le dossier $fichier_a_modifier a été modifié"
 function suppression_de_repertoire()
 {
 read -p "Veuillez entrer le nom du répertoire à supprimer : " nom_repertoire
-read -p "Veuillez spécifier le /chemin/absolu/du/repertoire/a/supprimer : " repertoire_a_supprimer
+read -p "Veuillez spécifier le /chemin/absolu/du/repertoire/a/supprimer en incluant le nom du fichier à supprimer : " repertoire_a_supprimer
 ssh -t "$User@$IPCible" "rm -r $repertoire_a_supprimer"
 echo "Le répertoire $nom_repetoire a été supprimé"
 }
