@@ -267,11 +267,11 @@ do
   # Choix pour $install1
 while true
 do
-	echo -e 'Que souhaitez-vous faire ? \nTaper "1" pour renseigner un paquet. \nTaper "2" pour rechercher un paquet.'
+	echo -e 'Que souhaitez-vous faire ? \nTaper "1" pour renseigner un paquet. \nTaper "2" pour rechercher un paquet.\nTaper "3" pour revenir au menu précédent'
 	read -p "Choix : " install1
 
 # Vérification entrée $install1
-	if [ "$install1" -eq "1" ] || [ "$install1" -eq "2" ];
+	if [ "$install1" -eq "1" ] || [ "$install1" -eq "2" ]; if [ "$install1" -eq "3" ];
 	then
     	break    
 	else
@@ -279,7 +279,7 @@ do
     	fi
 done
 
-# Action choix "package"
+# Action choix "1"
 if [ "$install1" -eq "1" ]
 then
 	while true;
@@ -308,6 +308,12 @@ then
         	ssh -t "$User@$IPCible" "sudo -S apt-cache search -n $search1"
     	fi
 	done
+fi
+
+# Action choix "3"
+if [ "$package1" -eq "3" ]
+then
+        break
 fi
 
 done
