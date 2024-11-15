@@ -91,7 +91,7 @@ Un deuxième prompt s'affiche, demandant d'entrer le code pour les modifications
 **:seven: Supppression de répertoire**  
 Pour supprimer un répertoire, entrez 7. Un prompt s'affiche, demandant le nom du répertoire à supprimer.  
 Un deuxième prompt s'affiche, demandant de spécifier le chemin absolu du répertoire à supprimer.  
-⚠️ ATTENTION à bien inclure, dans le chemin absolu, le nom du fichier à supprimer. Sinon, la commande supprimera le dossier parent, entrer autres, le dernier dossier que vous avez spécifié ! :warning:
+⚠️ **ATTENTION à bien inclure, dans le chemin absolu, le nom du fichier à supprimer. Sinon, la commande supprimera le dossier parent, entrer autres, le dernier dossier que vous avez spécifié !** :warning:
 ![14 Suppression de répertoire](https://github.com/user-attachments/assets/af96aa26-b571-47bc-9d02-18d1c0af7cea)  
 
 
