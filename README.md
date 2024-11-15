@@ -1,14 +1,14 @@
 # TSSR-2409-VERT-P2-G4-TheScriptingProject
 
-## I. Objectifs  
-### 1 - Objectif principal  
+## 🍀 I. Objectifs  
+### 🔱 1 - Objectif principal  
 - Depuis une machine Windows Server, on exécute un script Powershell qui cible des ordinateurs Windows  
 - Depuis une machine Debian, on exécute un script shell qui cible des ordinateurs Ubuntu  
 
-### Objectif secondaire  
+### 🔱 Objectif secondaire  
 - Depuis un serveur, cibler une machine cliente avec un type d'OS différent  
 
-## II. Membres de l'équipe  
+## 🍀 II. Membres de l'équipe  
 
 Pour mener à bien ce projet, nous avons constitué une équipe composée de :  
 - William  
@@ -18,9 +18,9 @@ Pour mener à bien ce projet, nous avons constitué une équipe composée de :
 
 La méthode de travail utilisée est la méthode SCRUM. De ce fait, les rôles _Product Owner_ et _Scurm Master_ seront attribués à tour de rôle chaque semaine.  
 
-## III. Éléments à implémenter - Machines  
+## 🍀 III. Éléments à implémenter - Machines  
 
-### 1 - Clients  
+### 🔱 1 - Clients  
 
 Deux clients seront crées pour ce projet :  
 
@@ -36,7 +36,7 @@ Deux clients seront crées pour ce projet :
   - Mot de passe : Azerty1*  
   - Adressee IP fixe : 172.16.10.20/24  
 
-### 2 - Serveurs  
+### 🔱 2 - Serveurs  
 
 Deux serveurs seront également crées : 
 
@@ -52,9 +52,9 @@ Deux serveurs seront également crées :
   - Mot de passe : Azerty1*
   - Adresse IP fixe : 172.16.10.5/24
  
-## III. Éléments à implémenter - Scripts  
+## 🍀 IV. Éléments à implémenter - Scripts  
 
-### 1 - Script Bash  
+### 🔱 1 - Script Bash  
 
 Un script Bash sera crée, permettant plusieurs actions :  
 
@@ -66,13 +66,13 @@ Un script Bash sera crée, permettant plusieurs actions :
 
 Ce script s'exécute sur le serveur Debian12 et utilise les commandes et instructions shell bash.
 
- ### 2 - Script PowerShell
+ ### 🔱 2 - Script PowerShell
 
 Un script PowerShell sera également crée, permettant les mêmes actions que le script Bash.
 
 Ce script s'exécute sur le servuer Windows Server 2022, sous PowerShell Core.  
 
-## IV. Documentation  
+## 🍀 V. Documentation  
 
 Une documentation sous format markdown sera rédigée et sera livrée à la fin de ce projet. Elle contiendra :  
 
