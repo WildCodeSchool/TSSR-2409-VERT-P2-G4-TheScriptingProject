@@ -144,7 +144,7 @@ cat Team.txt
 | Action      | Utilisateur       | Sortie d’un groupe local                                                 |:white_check_mark:|:pencil2:|
 | Action      | Ordinateur client | Arrêt                                                                    |:white_check_mark:|:pencil2:|
 | Action      | Ordinateur client | Redémarrage                                                              |:white_check_mark:|:pencil2:|
-| Action      | Ordinateur client | Verrouillage                                                             |:white_check_mark:|:pencil2:|
+| Action      | Ordinateur client | Verrouillage                                                             |:pencil2:|:pencil2:|
 | Action      | Ordinateur client | Mise-à-jour du système                                                   |:white_check_mark:|:pencil2:|
 | Action      | Ordinateur client | Création de répertoire                                                   |:white_check_mark:|:pencil2:|
 | Action      | Ordinateur client | Modification de répertoire                                               |:white_check_mark:|:x:|
@@ -154,8 +154,8 @@ cat Team.txt
 | Action      | Ordinateur client | Désactivation du pare-feu                                                |:white_check_mark:|:x:|
 | Action      | Ordinateur client | Installation de logiciel                                                 |:white_check_mark:|:x:|
 | Action      | Ordinateur client | Désinstallation de logiciel                                              |:white_check_mark:|:x:|
-| Action      | Ordinateur client | Exécution de script sur la machine distante                              |:white_check_mark:|:x:|
-| Information | Utilisateur       | Date de dernière connexion d’un utilisateur                              |:white_check_mark:|:x:|
+| Action      | Ordinateur client | Exécution de script sur la machine distante                              |:pencil2:|:x:|
+| Information | Utilisateur       | Date de dernière connexion d’un utilisateur                              |:pencil2:|:x:|
 | Information | Utilisateur       | Date de dernière modification du mot de passe                            |:white_check_mark:|:pencil2:|
 | Information | Utilisateur       | Liste des sessions ouvertes par l'utilisateur                            |:white_check_mark:|:pencil2:|
 | Information | Utilisateur       | Groupe d’appartenance d’un utilisateur                                   |:white_check_mark:|:x:|
@@ -166,15 +166,15 @@ cat Team.txt
 | Information | Ordinateur client | Nombre de disque                                                         |:white_check_mark:|:pencil2:|
 | Information | Ordinateur client | Partition (nombre, nom, FS, taille) par disque                           |:white_check_mark:|:pencil2:|
 | Information | Ordinateur client | Espace disque restant par partition/volume                               |:white_check_mark:|:pencil2:|
-| Information | Ordinateur client | Nom et espace disque d'un dossier (nom de dossier demandé)               |:white_check_mark:|:pencil2:|
+| Information | Ordinateur client | Nom et espace disque d'un dossier (nom de dossier demandé)               |:pencil2:|:pencil2:|
 | Information | Ordinateur client | Liste des lecteurs monté (disque, CD, etc.)                              |:white_check_mark:|:pencil2:|
 | Information | Ordinateur client | Nombre d'interface                                                       |:white_check_mark:|:pencil2:|
-| Information | Ordinateur client | Adresse IP de chaque interface                                           |:white_check_mark:|:pencil2:|
+| Information | Ordinateur client | Adresse IP de chaque interface                                           |:pencil2:|:pencil2:|
 | Information | Ordinateur client | Adresse Mac                                                              |:white_check_mark:|:pencil2:|
 | Information | Ordinateur client | Liste des ports ouverts                                                  |:white_check_mark:|:pencil2:|
 | Information | Ordinateur client | Statut du pare-feu                                                       |:white_check_mark:|:pencil2:|
 | Information | Script            | Recherche des evenements dans le fichier log_evt.log pour un utilisateur |:pencil2:|:x:|
 | Information | Script            | Recherche des evenements dans le fichier log_evt.log pour un ordinateur  |:pencil2:|:x:|
-| Général     | Script            | Compilation générale du script                                           |:pencil2:|:x:|
-| Général     | Script            | Mise en forme et présentation des menus                                  |:pencil2:|:x:|
+| Général     | Script            | Compilation générale du script                                           |:white_check_mark:|:x:|
+| Général     | Script            | Mise en forme et présentation des menus                                  |:white_check_mark:|:x:|
 | Général     | Script            | Etat d'avancement en pourcentage                                         |**93%**|**31%**|
