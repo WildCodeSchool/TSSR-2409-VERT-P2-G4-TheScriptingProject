@@ -1,13 +1,20 @@
-**<p align="center">Guide d'utilisation pour le script bash</p>**
+**<p align="center">Guide d'utilisation pour le script bash</p>**  
+
+Ce guide d'utilisation explique les fonctions de ce script une à une, étape par étape.
+
+Au lancement de script, deux prompts s'affichent à votre écran. L'un vous invite à renseigner une adresse IP, et l'autre vous invite à renseigner un nom d'utilisateur se trouvant sur la machine.  
 
 ![0 DemarrageScript](https://github.com/user-attachments/assets/160089dc-e524-4cff-b319-927e0de303c5)
 
 
 ### I - Brique Action - Utilisateur  
+Si votre besoin est d'effectuer une action sur un utilisateur, vous devrez choisir, dans le menu principal, l'option "1 - Action sur utilisateur".  
+Le menu suivant s'affichera sur votre écran :  
 
 ![I Action sur utilisateur](https://github.com/user-attachments/assets/aeb391ec-2cdf-4ec5-8d0a-5c054f3b8c29)  
 
 **1. Création de compte utilisateur local**  
+Pour créer un utilisateur, entrez 1. Un prompt s'affiche, demandant le nom du nouvel utilisateur que vous souhaitez créer.
 ![1 Creation utilisateur](https://github.com/user-attachments/assets/69a121eb-063e-43fe-a197-449fec62ae27)
 
 
