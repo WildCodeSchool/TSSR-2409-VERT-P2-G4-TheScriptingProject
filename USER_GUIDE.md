@@ -1,4 +1,4 @@
-**<p align="center">Guide d'utilisation pour le script bash</p>**  
+**<p align="center">🛰️ Guide d'utilisation pour le script bash 🛰️</p>**  
 
 Ce guide d'utilisation explique les fonctions de ce script une à une, étape par étape.  
 
