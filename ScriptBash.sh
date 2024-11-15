@@ -271,7 +271,7 @@ do
 	read -p "Choix : " install1
 
 # Vérification entrée $install1
-	if [ "$install1" -eq "1" ] || [ "$install1" -eq "2" ]; [ "$install1" -eq "3" ];
+	if [ "$install1" -eq "1" ] || [ "$install1" -eq "2" ] || [ "$install1" -eq "3" ];
 	then
     	break    
 	else
